@@ -30,34 +30,56 @@ a {
 
 header {
   margin-bottom: 20px; }
-  header div {
-    display: inline-block; }
 
 .tagline {
-  margin-left: 20px; }
+  margin-top: 55px; }
 
 .navbar-gradient {
   background-image: url("../img/gradient-tile.svg");
   background-repeat: repeat-x;
-  height: 63px; }
+  height: 52px;
+  background-position: 0 -5px;
+  background-color: #939598; }
 
 .navbar {
-  padding-top: 5px;
   border-radius: 0; }
 
-#masthead {
-  margin-bottom: 20px; }
-  #masthead img {
-    max-width: 100%; }
+.slickslider-image img {
+  width: 100% auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-repeat: no-repeat; }
+
+.maincontent h1 {
+  font-size: 1.125em;
+  font-weight: 700; }
+.maincontent p {
+  font-size: 1em;
+  font-weight: 400; }
 
 .sidebar {
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 15px;
   -webkit-box-shadow: inset -2px -2px 2px 0px #e0e0e0;
   -moz-box-shadow: inset -2px -2px 2px 0px #e0e0e0;
   box-shadow: inset -2px -2px 2px 0px #e0e0e0; }
 
-footer {
+footer, .footer-nav {
+  font-size: 0.75em; }
+
+.footer-divideline {
   border-top: 2px solid #552988;
   margin-top: 20px;
-  padding-top: 7px; }
+  padding-top: 7px;
+  width: 1200px;
+  max-width: 100%; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -15px; }

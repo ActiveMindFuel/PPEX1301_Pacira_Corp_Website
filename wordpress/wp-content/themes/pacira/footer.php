@@ -1,6 +1,7 @@
 		<div class="container">
+			<div class="row"><div class="col-xs-12"><div class="footer-divideline"></div></div></div>
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 					<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 						<div id="inner-footer" class="wrap cf">
@@ -27,10 +28,18 @@
 		
 					</footer>
 				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<ul class="footer-nav">
+						<li>Contact</li>
+						<li>US Legal</li>
+						<li>Site Map</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<?php // all js scripts are loaded in library/bones.php ?>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
 		<?php wp_footer(); ?>
 
 	</body>

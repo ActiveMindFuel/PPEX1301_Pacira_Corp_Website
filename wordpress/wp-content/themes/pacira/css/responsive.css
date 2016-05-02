@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Optima";
+  src: url("http://www.myfontfree.com/data/1/o/optima/unicode.optima.ttf"); }
+.brandfont {
+  font-family: "Optima"; }
+
+/* LG Large Desktop */
+@media all and (min-width: 1170px) {
+  .sidebar {
+    margin-left: -15px; } }
+/* MD Medium Desktop */
+@media all and (min-width: 992px) and (max-width: 1169px) {
+  .sidebar {
+    margin-left: -15px !important; } }

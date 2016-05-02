@@ -11,17 +11,23 @@ a { color: black; }
 .tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
 .navbar a { color: $white; }
 
-header { margin-bottom: 20px; div { display: inline-block; } }
-.tagline { margin-left: 20px; }
+header { margin-bottom: 20px; }
+.tagline { margin-top: 55px; }
 
-.navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 63px; }
-.navbar { padding-top: 5px; border-radius: 0; }
+.navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 52px; background-position: 0 -5px; background-color: $grey; }
+.navbar { border-radius: 0; }
 
 // slick slider module -----------------------------------------------
-#masthead { img { max-width: 100%; } margin-bottom: 20px; }
+.slickslider-image img { width: 100% auto; max-width: 100%; margin-bottom: 10px; background-repeat: no-repeat; } 
+
+// content module ----------------------------------------------- 
+.maincontent {	h1 { font-size: 1.125em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } }
 
 // sidebar module ----------------------------------------------- 
-.sidebar { background-color: $sidebar; padding: 20px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
+.sidebar { background-color: $sidebar; padding: 15px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
 
 // footer module ----------------------------------------------- 
-footer { border-top: 2px solid $purple; margin-top: 20px; padding-top: 7px; }
+footer,.footer-nav { font-size: 0.75em; }
+
+.footer-divideline { border-top: 2px solid $purple; margin-top: 20px; padding-top: 7px; width: 1200px; max-width: 100%; }
+ul { list-style: none; padding: 0; margin: 0; } .footer-nav { display: flex; justify-content: space-between; margin-left: -15px; } 

@@ -1,0 +1,13 @@
+@import 'var';
+@import 'mixins';
+@import 'fonts';
+
+/* LG Large Desktop */
+@media all and (min-width: 1170px) {
+	 .sidebar { margin-left: -15px; }
+}
+
+/* MD Medium Desktop */
+@media all and (min-width: 992px) and (max-width: 1169px) {
+	.sidebar { margin-left: -15px!important; }
+}
