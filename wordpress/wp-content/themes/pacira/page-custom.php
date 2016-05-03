@@ -24,11 +24,12 @@
 				<?php if (have_rows('slick_slider')) : while (have_rows('slick_slider')) : the_row(); ?>
 					<div class="slickslider-container">
 						<div class="slickslider-image">
-							<img src="<?php the_sub_field('slick_slider_image'); ?>">
-						</div>
-						<div class="slickslider-text">
-							<div class="slickslider-header"><?php the_sub_field('slick_slider_header'); ?></div>
-							<div class="slickslider-subheader"><?php the_sub_field('slick_slider_subheader'); ?></div>
+							<img class="slickslider-img" src="<?php the_sub_field('slick_slider_image'); ?>">
+							<img class="slickslider-img-alt" src="<?php the_sub_field('slick_slider_image_alt'); ?>">
+							<div class="slickslider-text">
+								<div class="slickslider-header"><?php the_sub_field('slick_slider_header'); ?></div>
+								<div class="slickslider-subheader"><?php the_sub_field('slick_slider_subheader'); ?></div>
+							</div>
 						</div>
 					</div>
 				<?php endwhile; endif; ?>
@@ -36,7 +37,6 @@
 		</div>
 	</div>
 </div>
-
 
 <!-- main-content-module ************************************************************************************************************************** -->
 
@@ -90,5 +90,5 @@
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><?php get_sidebar(); ?></div>
 	</div>
 </div>
-
+</div>
 <?php get_footer(); ?>

@@ -30,6 +30,13 @@ function bones_ahoy() {
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
   require_once( 'library/custom-post-type.php' );
 
+  // Register Custom Navigation Walker
+  require_once('wp_bootstrap_navwalker.php');
+  register_nav_menus( array( 
+    'primary' => __( 'Primary Menu', 'bones' ),
+    'secondary' => __( 'Top Menu', 'bones' ) )
+  );
+
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
   // A better title

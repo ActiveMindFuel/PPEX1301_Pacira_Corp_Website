@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Optima";
   src: url("http://www.myfontfree.com/data/1/o/optima/unicode.optima.ttf"); }
-.brandfont, .tagline {
+.brandfont, .tagline, .slickslider-header, .slickslider-subheader {
   font-family: "Optima"; }
 
 html, body {
@@ -9,7 +9,12 @@ html, body {
   font-size: 16px; }
 
 body {
-  margin-top: 20px; }
+  margin-top: 0px; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0; }
 
 a {
   color: black; }
@@ -29,7 +34,8 @@ a {
   color: #fff; }
 
 header {
-  margin-bottom: 20px; }
+  margin-bottom: 10px;
+  padding: 0 20px; }
 
 .tagline {
   margin-top: 55px; }
@@ -42,20 +48,63 @@ header {
   background-color: #939598; }
 
 .navbar {
-  border-radius: 0; }
+  border-radius: 0;
+  margin-bottom: 0; }
+
+.navigation {
+  margin-bottom: 0px; }
+
+.fixed-container {
+  background-color: #fff;
+  padding-top: 20px; }
+
+.navbar-fixed-top {
+  margin-bottom: 10px !important; }
+
+.shiftnav-main-toggle-content a {
+  display: none; }
+
+.slickslider-header {
+  color: #552988;
+  font-size: 3.4em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2em; }
+
+.slickslider-subheader {
+  color: #552988;
+  font-size: 2em;
+  font-weight: 700;
+  font-style: italic;
+  padding-left: 100px; }
+
+.slickslider-text {
+  display: none; }
 
 .slickslider-image img {
-  width: 100% auto;
-  max-width: 100%;
-  margin-bottom: 10px;
+  width: 100%;
+  max-height: 569px;
+  height: 100%;
   background-repeat: no-repeat; }
 
-.maincontent h1 {
-  font-size: 1.125em;
-  font-weight: 700; }
-.maincontent p {
-  font-size: 1em;
-  font-weight: 400; }
+img.slickslider-img {
+  display: block; }
+
+img.slickslider-img-alt {
+  display: none; }
+
+.slickslider {
+  margin-top: 190px;
+  margin-bottom: 20px; }
+
+.maincontent {
+  padding: 0 20px; }
+  .maincontent h1 {
+    font-size: 1.125em;
+    font-weight: 700; }
+  .maincontent p {
+    font-size: 1em;
+    font-weight: 400; }
 
 .sidebar {
   background-color: #f1f1f1;
@@ -65,7 +114,11 @@ header {
   box-shadow: inset -2px -2px 2px 0px #e0e0e0; }
 
 footer, .footer-nav {
-  font-size: 0.75em; }
+  font-size: 0.75em;
+  padding: 0 20px; }
+
+footer {
+  margin-bottom: 30px; }
 
 .footer-divideline {
   border-top: 2px solid #552988;
