@@ -38,6 +38,9 @@
     margin-top: 220px !important;
     margin-bottom: 20px; }
 
+  .masthead img {
+    margin-top: 220px; }
+
   /*
   .slickslider-header { color: $purple; font-size: 3.4em; font-weight: 700; font-style: italic; line-height: 1.2em; }
   .slickslider-subheader { color: $purple; font-size: 2em; font-weight: 700; font-style: italic; padding-left: 100px; }
@@ -96,7 +99,10 @@
     display: none; }
 
   img.slickslider-img-alt {
-    display: block; } }
+    display: block; }
+
+  .masthead img {
+    margin-top: 100px; } }
 /* XXS Extra Small Mobile */
 @media all and (max-width: 480px) {
   .tagline {

@@ -49,7 +49,7 @@
 					<header>
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-								<div class="logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Pacira_logo.svg" alt="Pacira logo"></div>
+								<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Pacira_logo.svg" alt="Pacira logo"></a></div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
 								<div class="tagline">A Passion For Delivering Improved Patient Care<sup>TM</sup></div>

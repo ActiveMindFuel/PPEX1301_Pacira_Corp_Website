@@ -34,7 +34,10 @@ function bones_ahoy() {
   require_once('wp_bootstrap_navwalker.php');
   register_nav_menus( array( 
     'primary' => __( 'Primary Menu', 'bones' ),
-    'secondary' => __( 'Top Menu', 'bones' ) )
+    'about' => __( 'About Pacira Menu', 'bones' ),
+    'platform' => __( 'Platform & Pipeline Menu', 'bones' ),
+    'products' => __( 'Products Menu', 'bones' ),
+    'footer' => __( 'Footer Menu', 'bones' ) )
   );
 
   // launching operation cleanup

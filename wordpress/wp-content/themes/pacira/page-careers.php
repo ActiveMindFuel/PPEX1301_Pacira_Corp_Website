@@ -15,29 +15,17 @@
 
 <?php get_header(); ?>
 
-<!-- slick-slider-module ************************************************************************************************************************** -->
+<!-- masthead-module ************************************************************************************************************************** -->
 
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="slickslider">
-				<?php if (have_rows('slick_slider')) : while (have_rows('slick_slider')) : the_row(); ?>
-					<div class="slickslider-container">
-						<div class="slickslider-image">
-							<img class="slickslider-img" src="<?php the_sub_field('slick_slider_image'); ?>">
-							<img class="slickslider-img-alt" src="<?php the_sub_field('slick_slider_image_alt'); ?>">
-							<div class="slickslider-text">
-								<div class="slickslider-header"><?php the_sub_field('slick_slider_header'); ?></div>
-								<div class="slickslider-subheader"><?php the_sub_field('slick_slider_subheader'); ?></div>
-							</div>
-						</div>
-					</div>
-				<?php endwhile; endif; ?>
+			<div class="masthead">
+				<img class="masthead-img" src="<?php the_field('masthead_image'); ?>">
 			</div>
 		</div>
 	</div>
 </div>
-
 
 <!-- main-content-module ************************************************************************************************************************** -->
 
