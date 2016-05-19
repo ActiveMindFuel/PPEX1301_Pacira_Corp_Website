@@ -71,6 +71,55 @@
 						<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
 					</div>
 				<?php endif; ?>
+					
+				<!-- Tabs -->
+				<div id="tabs">
+					<!-- nav tabs -->
+					<ul class="nav nav-tabs two-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+					</ul>
+					<!-- tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane box-element active" id="home">...home</div>
+						<div role="tabpanel" class="tab-pane box-element" id="profile">...profile</div>
+					</div>
+				</div>
+
+				<!-- Profiles -->
+				<div id="profiles">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="box-element">
+									<div class="row">
+										<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+											<img src="" alt="">
+										</div>
+										<div class="col-xs-9 col-sm-9 col-md-8 col-lg-8">
+											<h2>Name</h2>
+											<p>Job Title</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="box-element">
+									<div class="row">
+										<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
+											<img src="" alt="">
+										</div>
+										<div class="col-xs-9 col-sm-9 col-md-8 col-lg-8">
+											<h2>Name</h2>
+											<p>Job Title</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 

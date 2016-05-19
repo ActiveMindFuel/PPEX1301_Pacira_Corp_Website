@@ -43,8 +43,29 @@ img.slickslider-img-alt { display: none; }
 // content module ----------------------------------------------- 
 .maincontent { padding: 0 20px;	h1 { font-size: 1.125em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } }
 
+// tabs module -----------------------------------------------
+#tabs { 
+	.two-tabs { 
+		li { width: 50%; &:nth-child(1) { padding-right: 5px; } &:nth-child(2) { padding-left: 5px; } } 
+		li a { width: 100%; }
+}
+	.nav-tabs { 
+		ul.two-tabs li a { width: 500px!important; }
+		li a { background-color: $grey; } 
+		li>a { border: none; margin-bottom: 7px; border-radius: 0; }
+		li.active>a { background-color: $purple; padding-bottom: 17px; margin-bottom: 0!important; }
+		li a:hover { background-color: $grey; color: $white; }
+	}
+}
+
+// profiles module -----------------------------------------------
+#profiles { }
+
 // sidebar module ----------------------------------------------- 
-.sidebar { background-color: $sidebar; padding: 15px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
+.sidebar { 
+	padding: 15px 0px 15px 20px; border-left: 1px solid $purple; 
+	h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
+}
 
 // footer module ----------------------------------------------- 
 footer,.footer-nav { font-size: 0.75em; padding: 0 20px; }
@@ -52,3 +73,6 @@ footer,.footer-nav { font-size: 0.75em; padding: 0 20px; }
 footer { margin-bottom: 30px; }
 .footer-divideline { border-top: 2px solid $purple; margin-top: 20px; padding-top: 7px; width: 1200px; max-width: 100%; }
 ul { list-style: none; padding: 0; margin: 0; } .footer-nav { display: flex; justify-content: space-between; margin-left: -15px; } 
+
+// custom class -----------------------------------------------
+.box-element { background-color: $sidebar; padding: 15px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
