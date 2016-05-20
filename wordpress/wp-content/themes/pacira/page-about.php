@@ -72,19 +72,8 @@
 					</div>
 				<?php endif; ?>
 				<!-- flexible content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-				<!-- Tabs -->
-				<div id="tabs">
-					<!-- nav tabs -->
-					<ul class="nav nav-tabs two-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-					</ul>
-					<!-- tab panes -->
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane box-element active" id="home">...home</div>
-						<div role="tabpanel" class="tab-pane box-element" id="profile">...profile</div>
-					</div>
-				</div>
+					
+				
 
 			</div>
 		</div>

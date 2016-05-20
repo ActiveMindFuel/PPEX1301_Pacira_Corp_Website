@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".slickslider").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,autoplay:!1,autoplaySpeed:5e3}),$("#paciraTabs a").click(function(e){e.preventDefault(),$(this).tab("show")})});
