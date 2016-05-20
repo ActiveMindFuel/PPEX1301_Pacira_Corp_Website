@@ -1,0 +1,71 @@
+@import 'var';
+@import 'mixins';
+@import 'fonts';
+@import 'bourbon/bourbon';
+
+html,body { margin: 0 auto; font-size: 16px; }
+body { margin-top: 0px; }
+.container { width: 100%; max-width: 1200px; padding: 0; }
+a { color: black; }
+
+// header module & navigation -----------------------------------------------
+.tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
+.navbar a { color: $white; }
+
+header { margin-bottom: 10px; padding: 0 20px; }
+.tagline { margin-top: 55px; }
+
+.navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 52px; background-position: 0 -5px; background-color: $grey; }
+.navbar { border-radius: 0; margin-bottom: 0; }
+.navigation { margin-bottom: 0px; }
+
+.fixed-container { background-color: $white; padding-top: 20px; }
+.navbar-fixed-top { margin-bottom: 10px!important; }
+
+// Masthead module -----------------------------------------------
+.masthead { img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; margin-top: 190px; margin-bottom: 20px; } }
+
+// ShiftNav module -----------------------------------------------
+.shiftnav-main-toggle-content a { display: none; }
+
+// slick slider module -----------------------------------------------
+.slickslider-header { color: $purple; font-size: 3.4em; @extend .brandfont; font-weight: 700; font-style: italic; line-height: 1.2em; }
+.slickslider-subheader { color: $purple; font-size: 2em; @extend .brandfont; font-weight: 700; font-style: italic; padding-left: 100px; }
+
+.slickslider-text { display: none; }
+.slickslider-image img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; } 
+img.slickslider-img { display: block; }
+img.slickslider-img-alt { display: none; }
+.slickslider { margin-top: 190px; margin-bottom: 20px; }
+
+// content module ----------------------------------------------- 
+.maincontent { padding: 0 20px;	h1 { font-size: 1.125em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } }
+
+// tabs module -----------------------------------------------
+#tabs { 
+	.two-tabs { 
+		li { width: 50%; &:nth-child(1) { padding-right: 5px; } &:nth-child(2) { padding-left: 5px; } } 
+		li a { width: 100%; }
+}
+	.nav-tabs { 
+		ul.two-tabs li a { width: 500px!important; }
+		li a { background-color: $grey; } 
+		li>a { border: none; margin-bottom: 7px; border-radius: 0; }
+		li.active>a { background-color: $purple; padding-bottom: 17px; margin-bottom: 0!important; }
+		li a:hover { background-color: $grey; color: $white; }
+	}
+}
+
+// sidebar module ----------------------------------------------- 
+.sidebar { 
+	padding: 15px 0px 15px 20px; border-left: 1px solid $purple; 
+	h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
+}
+
+// footer module ----------------------------------------------- 
+footer,.footer-nav { font-size: 0.75em; padding: 0 20px; }
+
+footer { margin-bottom: 30px; }
+.footer-divideline { border-top: 2px solid $purple; margin-top: 20px; padding-top: 7px; width: 1200px; max-width: 100%; }
+ul { list-style: none; padding: 0; margin: 0; } .footer-nav { display: flex; justify-content: space-between; margin-left: -15px; } 
+
