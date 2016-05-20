@@ -221,6 +221,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/FPO-Injection-pen.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21046,
+		"inputAbbreviatedPath": "\/img\/FPO-Injection-pen.jpg",
+		"outputAbbreviatedPath": "\/img\/FPO-Injection-pen.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/masthead-about.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2056,7 +2067,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8080",
+	"externalServerAddress": "http:\/\/localhost:8888\/",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

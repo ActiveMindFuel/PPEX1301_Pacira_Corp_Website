@@ -114,6 +114,55 @@ img.slickslider-img-alt {
     font-size: 1em;
     font-weight: 400; }
 
+#tabs-module .tabs-module-two-tabs li {
+  width: 50%; }
+  #tabs-module .tabs-module-two-tabs li:nth-child(1) {
+    padding-right: 5px; }
+  #tabs-module .tabs-module-two-tabs li:nth-child(2) {
+    padding-left: 5px; }
+#tabs-module .tabs-module-two-tabs li a {
+  width: 100%; }
+#tabs-module .tabs-module-three-tabs li {
+  width: 33.3%; }
+  #tabs-module .tabs-module-three-tabs li:nth-child(1) {
+    padding-right: 5px; }
+  #tabs-module .tabs-module-three-tabs li:nth-child(2) {
+    padding-left: 5px; }
+  #tabs-module .tabs-module-three-tabs li:nth-child(3) {
+    padding-left: 10px; }
+#tabs-module .tabs-module-three-tabs li a {
+  width: 100%; }
+#tabs-module .nav-tabs li a {
+  background-color: #552988;
+  background-image: url("../img/gradient-tile-sm.svg");
+  color: #fff; }
+#tabs-module .nav-tabs li > a {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 0; }
+#tabs-module .nav-tabs li.active > a {
+  background-color: #f1f1f1;
+  background-image: none;
+  padding-bottom: 20px;
+  margin-bottom: 0 !important;
+  -webkit-box-shadow: inset -2px 0px 0px 0px #e0e0e0;
+  -moz-box-shadow: inset -2px 0px 0px 0px #e0e0e0;
+  box-shadow: inset -2px 0px 0px 0px #e0e0e0;
+  color: #552988; }
+#tabs-module .tabs-module-box-element {
+  background-color: #f1f1f1;
+  padding: 15px 15px 30px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: inset -2px -2px 0px 0px #e0e0e0;
+  -moz-box-shadow: inset -2px -2px 0px 0px #e0e0e0;
+  box-shadow: inset -2px -2px 0px 0px #e0e0e0; }
+#tabs-module .tabs-module-img-left {
+  float: left;
+  padding-right: 20px; }
+#tabs-module .tabs-module-img-right {
+  float: right;
+  padding-left: 15px; }
+
 .sidebar {
   padding: 15px 0px 15px 20px;
   border-left: 1px solid #552988; }
@@ -150,6 +199,6 @@ ul {
   background-color: #f1f1f1;
   padding: 15px;
   margin-bottom: 10px;
-  -webkit-box-shadow: inset -2px -2px 2px 0px #e0e0e0;
-  -moz-box-shadow: inset -2px -2px 2px 0px #e0e0e0;
-  box-shadow: inset -2px -2px 2px 0px #e0e0e0; }
+  -webkit-box-shadow: inset -2px -2px 0px 0px #e0e0e0;
+  -moz-box-shadow: inset -2px -2px 0px 0px #e0e0e0;
+  box-shadow: inset -2px -2px 0px 0px #e0e0e0; }
