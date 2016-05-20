@@ -114,30 +114,6 @@ img.slickslider-img-alt {
     font-size: 1em;
     font-weight: 400; }
 
-#tabs .two-tabs li {
-  width: 50%; }
-  #tabs .two-tabs li:nth-child(1) {
-    padding-right: 5px; }
-  #tabs .two-tabs li:nth-child(2) {
-    padding-left: 5px; }
-#tabs .two-tabs li a {
-  width: 100%; }
-#tabs .nav-tabs ul.two-tabs li a {
-  width: 500px !important; }
-#tabs .nav-tabs li a {
-  background-color: #939598; }
-#tabs .nav-tabs li > a {
-  border: none;
-  margin-bottom: 7px;
-  border-radius: 0; }
-#tabs .nav-tabs li.active > a {
-  background-color: #552988;
-  padding-bottom: 17px;
-  margin-bottom: 0 !important; }
-#tabs .nav-tabs li a:hover {
-  background-color: #939598;
-  color: #fff; }
-
 .sidebar {
   padding: 15px 0px 15px 20px;
   border-left: 1px solid #552988; }
