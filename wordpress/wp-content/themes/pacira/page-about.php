@@ -154,6 +154,29 @@
 						</div>
 					<?php endif; ?>
 
+					<!-- Profiles -->
+					<?php if( get_row_layout() == 'profile' ): ?>
+						<div id="profiles">
+							<div class="row">
+								<?php if( have_rows( 'profile_repeater' ) ): while ( have_rows( 'profile_repeater' ) ): the_row(); ?>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+										<div class="profiles-module-box-element">
+											<div class="row">
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+													<img src="<?php the_sub_field( 'profile_photo' ); ?>" alt="<?php the_sub_field( 'profile_photo_alt' ); ?>">
+												</div>
+												<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+													<h2><?php the_sub_field( 'profile_name' ); ?></h2>
+													<p><?php the_sub_field( 'profile_title' ); ?></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								<?php endwhile; endif; ?>
+							</div>
+						</div>
+					<?php endif; ?>
+
 				<?php endwhile; endif; ?>
 			</div>
 		</div>

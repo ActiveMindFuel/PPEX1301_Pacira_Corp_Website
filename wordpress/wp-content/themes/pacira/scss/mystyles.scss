@@ -3,7 +3,7 @@
 @import 'fonts';
 @import 'bourbon/bourbon';
 
-html,body { margin: 0 auto; font-size: 16px; }
+html,body { margin: 0 auto; font-size: 14px; }
 body { margin-top: 0px; }
 .container { width: 100%; max-width: 1200px; padding: 0; }
 a { color: black; }
@@ -64,6 +64,13 @@ img.slickslider-img-alt { display: none; }
 	.tabs-module-box-element { background-color: $sidebar; padding: 15px 15px 30px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 0px 0px rgba(224,224,224,1) ); }
 	.tabs-module-img-left { float: left; padding-right: 20px; }
 	.tabs-module-img-right { float: right; padding-left: 15px; }
+}
+
+// profiles module -----------------------------------------------
+#profiles { 
+	.profiles-module-box-element { background-color: $sidebar; padding: 15px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
+	img { width: 100%;  height: auto; }
+	h2 { font-size: 1em; font-weight: 700; }
 }
 
 // sidebar module ----------------------------------------------- 
