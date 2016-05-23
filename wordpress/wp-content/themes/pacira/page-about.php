@@ -108,26 +108,49 @@
 						</div>
 					<?php endif; ?>
 				
-					<div id="tabs-module">
-						<!-- nav three tabs -->
-						<ul class="nav nav-tabs three-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#technical" aria-controls="technical" role="tab" data-toggle="tab">Technical Attributes</a></li>
-							<li role="presentation"><a href="#regulatory" aria-controls="regulatory" role="tab" data-toggle="tab">Regulatory Attributes</a></li>
-							<li role="presentation"><a href="#commercial" aria-controls="commercial" role="tab" data-toggle="tab">Commercial Attributes</a></li>
-						</ul>
-						<!-- tab panes -->
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane box-element active" id="technical">
-								<p></p>
-							</div>
-							<div role="tabpanel" class="tab-pane box-element" id="regulatory">
-								<p></p>
-							</div>
-							<div role="tabpanel" class="tab-pane box-element" id="commercial">
-								<p></p>
+					<?php if( get_row_layout() == 'tripple_tab' ): ?>
+						<div id="tabs-module">
+							<!-- nav three tabs -->
+							<ul class="nav nav-tabs tabs-module-three-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#<?php the_sub_field( 'tab_one_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_one_id' ); ?>" role="tab" data-toggle="tab">	<?php the_sub_field( 'tab_one_title' ); ?></a></li>
+								<li role="presentation"><a href="#<?php the_sub_field( 'tab_two_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_two_id' ); ?>" role="tab" data-toggle="tab"><?php 	the_sub_field( 'tab_two_title' ); ?></a></li>
+								<li role="presentation"><a href="#<?php the_sub_field( 'tab_three_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_three_id' ); ?>" role="tab" data-toggle="tab"><?php 	the_sub_field( 'tab_three_title' ); ?></a></li>
+							</ul>
+							<!-- tab panes -->
+							<div class="tab-content">
+								<!-- tab one content -->
+								<div role="tabpanel" class="tab-pane tabs-module-box-element active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
+									<div class="tabs-module-img-left">
+										<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
+									</div>
+									<div class="tabs-module-img-right">
+										<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
+									</div>
+									<p><?php the_sub_field( 'tab_one_content' ); ?></p>
+								</div>
+								<!-- tab two content -->
+								<div role="tabpanel" class="tab-pane tabs-module-box-element" id="<?php the_sub_field( 'tab_two_id' ); ?>">
+									<div class="tabs-module-img-left">
+										<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
+									</div>
+									<div class="tabs-module-img-right">
+										<img src="<?php the_sub_field( 'tab_two_image_right' ); ?>" alt="<?php the_sub_field( 'tab_two_image_right_alt' ); ?>" >
+									</div>
+									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
+								</div>
+								<!-- tab three content -->
+								<div role="tabpanel" class="tab-pane tabs-module-box-element" id="<?php the_sub_field( 'tab_three_id' ); ?>">
+									<div class="tabs-module-img-left">
+										<img src="<?php the_sub_field( 'tab_three_image_left' ); ?>" alt="<?php the_sub_field( 'tab_three_image_left_alt' ); ?>" >
+									</div>
+									<div class="tabs-module-img-right">
+										<img src="<?php the_sub_field( 'tab_three_image_right' ); ?>" alt="<?php the_sub_field( 'tab_three_image_right_alt' ); ?>" >
+									</div>
+									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
+								</div>
 							</div>
 						</div>
-					</div>
+					<?php endif; ?>
 				<?php endwhile; endif; ?>
 
 			</div>
