@@ -84,9 +84,9 @@
 								<li role="presentation"><a href="#<?php the_sub_field( 'tab_two_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_two_id' ); ?>" role="tab" data-toggle="tab"><?php 	the_sub_field( 'tab_two_title' ); ?></a></li>
 							</ul>
 							<!-- tab panes -->
-							<div class="tab-content">
+							<div class="tab-content tabs-module-two-flex-container">
 								<!-- tab one content -->
-								<div role="tabpanel" class="tab-pane tabs-module-box-element active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
+								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-two-content active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
 									<div class="tabs-module-img-left">
 										<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
 									</div>
@@ -96,7 +96,7 @@
 									<p><?php the_sub_field( 'tab_one_content' ); ?></p>
 								</div>
 								<!-- tab two content -->
-								<div role="tabpanel" class="tab-pane tabs-module-box-element" id="<?php the_sub_field( 'tab_two_id' ); ?>">
+								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-two-content" id="<?php the_sub_field( 'tab_two_id' ); ?>">
 									<div class="tabs-module-img-left">
 										<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
 									</div>
@@ -119,9 +119,9 @@
 								<li role="presentation"><a href="#<?php the_sub_field( 'tab_three_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_three_id' ); ?>" role="tab" data-toggle="tab"><?php 	the_sub_field( 'tab_three_title' ); ?></a></li>
 							</ul>
 							<!-- tab panes -->
-							<div class="tab-content">
+							<div class="tab-content tabs-module-three-flex-container">
 								<!-- tab one content -->
-								<div role="tabpanel" class="tab-pane tabs-module-box-element active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
+								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-three-content active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
 									<div class="tabs-module-img-left">
 										<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
 									</div>
@@ -131,7 +131,7 @@
 									<p><?php the_sub_field( 'tab_one_content' ); ?></p>
 								</div>
 								<!-- tab two content -->
-								<div role="tabpanel" class="tab-pane tabs-module-box-element" id="<?php the_sub_field( 'tab_two_id' ); ?>">
+								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-three-content" id="<?php the_sub_field( 'tab_two_id' ); ?>">
 									<div class="tabs-module-img-left">
 										<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
 									</div>
@@ -141,7 +141,7 @@
 									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
 								</div>
 								<!-- tab three content -->
-								<div role="tabpanel" class="tab-pane tabs-module-box-element" id="<?php the_sub_field( 'tab_three_id' ); ?>">
+								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-three-content" id="<?php the_sub_field( 'tab_three_id' ); ?>">
 									<div class="tabs-module-img-left">
 										<img src="<?php the_sub_field( 'tab_three_image_left' ); ?>" alt="<?php the_sub_field( 'tab_three_image_left_alt' ); ?>" >
 									</div>
