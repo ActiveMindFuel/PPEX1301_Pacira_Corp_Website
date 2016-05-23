@@ -71,11 +71,10 @@
 						<p><?php _e( 'This is the error message in the page-custom.php template.', 'bonestheme' ); ?></p>
 					</div>
 				<?php endif; ?>
-
 				<!-- flexible content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+					
+				<!-- Tabs -->
 				<?php if( have_rows( 'flexible_content' ) ): while( have_rows( 'flexible_content' ) ): the_row(); ?>
-
-					<!-- Two Tabs -->
 					<?php if( get_row_layout() == 'double_tab' ): ?>
 						<div id="tabs-module">
 							<!-- nav two tabs -->
@@ -109,7 +108,6 @@
 						</div>
 					<?php endif; ?>
 				
-					<!-- Three Tabs -->
 					<?php if( get_row_layout() == 'tripple_tab' ): ?>
 						<div id="tabs-module">
 							<!-- nav three tabs -->
@@ -153,8 +151,8 @@
 							</div>
 						</div>
 					<?php endif; ?>
-
 				<?php endwhile; endif; ?>
+
 			</div>
 		</div>
 

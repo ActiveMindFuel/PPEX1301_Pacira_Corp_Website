@@ -109,7 +109,10 @@
 						</div>
 					<?php endif; ?>
 				
+<<<<<<< HEAD
 					<!-- Three Tabs -->
+=======
+>>>>>>> 2cf48f35a3084cb872665a79da6ea5b1f81afda3
 					<?php if( get_row_layout() == 'tripple_tab' ): ?>
 						<div id="tabs-module">
 							<!-- nav three tabs -->
@@ -153,6 +156,10 @@
 							</div>
 						</div>
 					<?php endif; ?>
+<<<<<<< HEAD
+=======
+				<?php endwhile; endif; ?>
+>>>>>>> 2cf48f35a3084cb872665a79da6ea5b1f81afda3
 
 				<?php endwhile; endif; ?>
 			</div>
