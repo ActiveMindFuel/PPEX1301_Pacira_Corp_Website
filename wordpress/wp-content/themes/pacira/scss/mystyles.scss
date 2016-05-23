@@ -41,6 +41,16 @@ img.slickslider-img-alt { display: none; }
 // content module ----------------------------------------------- 
 .maincontent { padding: 0 20px;	h1 { font-size: 1.125em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } }
 
+// paragraph module -----------------------------------------------
+#paragraph {
+	h1 { font-size: 1.2em; font-weight: 700; }
+	h2 { font-size: 1.1em; font-weight: 600; }
+	blockquote { font-style: italic; }
+	.translation {}
+	.rtl {}
+	.ltr {}
+}
+
 // tabs module -----------------------------------------------
 #tabs-module { 
 	.tab-pane { height: auto; }
