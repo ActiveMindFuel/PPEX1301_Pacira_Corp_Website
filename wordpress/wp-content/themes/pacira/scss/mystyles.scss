@@ -43,6 +43,7 @@ img.slickslider-img-alt { display: none; }
 
 // tabs module -----------------------------------------------
 #tabs-module { 
+	.tab-pane { height: auto; }
 	.tabs-module-two-tabs { 
 		li { width: 50%; &:nth-child(1) { padding-right: 5px; } &:nth-child(2) { padding-left: 5px; } } 
 		li a { width: 100%; }
@@ -62,8 +63,10 @@ img.slickslider-img-alt { display: none; }
 		//li a:hover { background-color: $purple; color: $white; }
 	}
 	.tabs-module-box-element { background-color: $sidebar; padding: 15px 15px 30px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 0px 0px rgba(224,224,224,1) ); }
-	.tabs-module-img-left { float: left; padding-right: 20px; }
-	.tabs-module-img-right { float: right; padding-left: 15px; }
+	.tabs-module-img-left { float: left; padding-right: 20px;}
+	.tabs-module-img-right { float: right; padding-left: 15px; } 
+	.tabs-module-two-flex-container { display: flex; flex-direction: column; min-height: 100%; .tabs-module-two-content { flex: 1; } } 
+	.tabs-module-three-flex-container { display: flex; flex-direction: column; min-height: 100%; .tabs-module-three-content { flex: 1; } } 
 }
 
 // profiles module -----------------------------------------------
@@ -88,3 +91,4 @@ ul { list-style: none; padding: 0; margin: 0; } .footer-nav { display: flex; jus
 
 // custom class -----------------------------------------------
 .box-element { background-color: $sidebar; padding: 15px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 0px 0px rgba(224,224,224,1) ); }
+.flex-container { display: flex; flex-direction: column; min-height: 100vh; }
