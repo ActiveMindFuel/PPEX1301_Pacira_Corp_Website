@@ -159,7 +159,7 @@
 						<div id="profiles">
 							<div class="row">
 								<?php if( have_rows( 'profile_repeater' ) ): while ( have_rows( 'profile_repeater' ) ): the_row(); ?>
-									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 										<div class="profiles-module-box-element">
 											<div class="row">
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
