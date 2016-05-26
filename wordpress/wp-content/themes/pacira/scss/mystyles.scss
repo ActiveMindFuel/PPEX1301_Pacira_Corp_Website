@@ -82,6 +82,7 @@ img.slickslider-img-alt { display: none; }
 .sidebar { 
 	padding: 15px 0px 15px 20px; border-left: 1px solid $purple; 
 	h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
+	li.current-menu-item { display: none; }
 }
 
 // footer module ----------------------------------------------- 

@@ -202,6 +202,8 @@ img.slickslider-img-alt {
     font-size: 1.2em;
     font-weight: 700;
     color: #552988; }
+  .sidebar li.current-menu-item {
+    display: none; }
 
 footer, .footer-nav {
   font-size: 0.75em;
