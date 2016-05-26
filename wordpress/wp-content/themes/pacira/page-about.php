@@ -75,6 +75,15 @@
 				<!-- flexible content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<?php if( have_rows( 'flexible_content' ) ): while( have_rows( 'flexible_content' ) ): the_row(); ?>
 
+					<!-- Profiles -->
+					<?php if( get_row_layout() == 'paragraph' ): ?>
+						<div id="paragraph">
+							<p>
+								<?php the_sub_field( 'paragraph_content' ); ?>
+							</p>
+						</div>
+					<?php endif; ?>
+
 					<!-- Two Tabs -->
 					<?php if( get_row_layout() == 'double_tab' ): ?>
 						<div id="tabs-module">

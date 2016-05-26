@@ -114,6 +114,19 @@ img.slickslider-img-alt {
     font-size: 1em;
     font-weight: 400; }
 
+#paragraph h1 {
+  font-size: 1.2em;
+  font-weight: 700; }
+#paragraph h2 {
+  font-size: 1.1em;
+  font-weight: 600; }
+#paragraph blockquote {
+  font-style: italic; }
+#paragraph .customheader {
+  color: #939598; }
+#paragraph .blockquote {
+  color: #552988 !important; }
+
 #tabs-module .tab-pane {
   height: auto; }
 #tabs-module .tabs-module-two-tabs li {
