@@ -166,64 +166,62 @@ function bones_theme_customizer($wp_customize) {
   //
   // Uncomment the below lines to remove the default customize sections 
 
-/* ============== *** CUSTOM SECTION *** ======================== */
-
-// Callback function to insert 'styleselect' into the $buttons array
-function my_mce_buttons_2( $buttons ) {
-  array_unshift( $buttons, 'styleselect' );
-  return $buttons;
-}
-// Register our callback to the appropriate filter
-add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
-
-// Callback function to filter the MCE settings
-function my_mce_before_init_insert_formats( $init_array ) {  
-  // Define the style_formats array
-  $style_formats = array(  
-    // Each array child is a format with it's own settings
-    array(  
-      'title' => '.translation',  
-      'block' => 'blockquote',  
-      'classes' => 'translation',
-      'wrapper' => true,
-    ),  
-    array(  
-      'title' => '⇠.rtl',  
-      'block' => 'blockquote',  
-      'classes' => 'rtl',
-      'wrapper' => true,
-    ),
-    array(  
-      'title' => '.ltr⇢',  
-      'block' => 'blockquote',  
-      'classes' => 'ltr',
-      'wrapper' => true,
-    ),
-  );  
-  // Insert the array, JSON ENCODED, into 'style_formats'
-  $init_array['style_formats'] = json_encode( $style_formats );  
+  /* ============== *** CUSTOM SECTION *** ======================== */
   
-  return $init_array;  
   
-} 
-// Attach callback to 'tiny_mce_before_init' 
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
-
-  // $wp_customize->remove_section('title_tagline');
-  // $wp_customize->remove_section('colors');
-  // $wp_customize->remove_section('background_image');
-  // $wp_customize->remove_section('static_front_page');
-  // $wp_customize->remove_section('nav');
-
-  // Uncomment the below lines to remove the default controls
-  // $wp_customize->remove_control('blogdescription');
-  
-  // Uncomment the following to change the default section titles
-  // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
-  // $wp_customize->get_section('background_image')->title = __( 'Images' );
 }
 
 add_action( 'customize_register', 'bones_theme_customizer' );
+
+add_filter( 'mce_buttons_2', 'fb_mce_editor_buttons' );
+  function fb_mce_editor_buttons( $buttons ) {
+  
+      array_unshift( $buttons, 'styleselect' );
+      return $buttons;
+  }
+  /**
+   * Add styles/classes to the "Styles" drop-down
+   */ 
+  add_filter( 'tiny_mce_before_init', 'fb_mce_before_init' );
+  
+  function fb_mce_before_init( $settings ) {
+  
+      $style_formats = array(
+          array(
+              'title' => 'Custom Header',
+              'selector' => 'h1',
+              'classes' => 'customheader'
+              ),
+          array(
+              'title' => 'Blockquote',
+              'inline' => 'span',
+              'styles' => array(
+                  'color' => 'blue'
+              ),
+              'classes' => 'blockquote',
+          ),
+          array(
+              'title' => 'AlertBox',
+              'block' => 'div',
+              'classes' => 'alert_box',
+              'wrapper' => true
+          ),
+          array(
+              'title' => 'Red Uppercase Text',
+              'inline' => 'span',
+              'styles' => array(
+                  'color'         => 'red', // or hex value #ff0000
+                  'fontWeight'    => 'bold',
+                  'textTransform' => 'uppercase'
+              )
+          )
+      );
+  
+      $settings['style_formats'] = json_encode( $style_formats );
+  
+      return $settings;
+  
+  }
 
 /************* ACTIVE SIDEBARS ********************/
 

@@ -46,9 +46,9 @@ img.slickslider-img-alt { display: none; }
 	h1 { font-size: 1.2em; font-weight: 700; }
 	h2 { font-size: 1.1em; font-weight: 600; }
 	blockquote { font-style: italic; }
-	.translation {}
-	.rtl {}
-	.ltr {}
+	.customheader { color: $grey; }
+	.blockquote { color: $purple!important; }
+	.highlight {}
 }
 
 // tabs module -----------------------------------------------

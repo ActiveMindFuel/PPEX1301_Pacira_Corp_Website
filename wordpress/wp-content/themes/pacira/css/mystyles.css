@@ -122,6 +122,10 @@ img.slickslider-img-alt {
   font-weight: 600; }
 #paragraph blockquote {
   font-style: italic; }
+#paragraph .customheader {
+  color: #939598; }
+#paragraph .blockquote {
+  color: #552988 !important; }
 
 #tabs-module .tab-pane {
   height: auto; }
