@@ -240,6 +240,9 @@ img.slickslider-img-alt {
     #recent-posts-2 li a:hover {
       color: #606265; }
 
+.single-post #respond {
+  display: none; }
+
 footer, .footer-nav {
   font-size: 0.75em;
   padding: 0 20px; }
