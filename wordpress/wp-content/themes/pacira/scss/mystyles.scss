@@ -6,7 +6,7 @@
 html,body { margin: 0 auto; font-size: 14px; }
 body { margin-top: 0px; }
 .container { width: 100%; max-width: 1200px; padding: 0; }
-a { color: black; }
+a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
 
 // header module & navigation -----------------------------------------------
 .tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
@@ -88,11 +88,23 @@ img.slickslider-img-alt { display: none; }
 	.col-lg-6:nth-child(even) { padding-left: 5px; }
 }
 
-// sidebar module ----------------------------------------------- 
+// sidebar (side menu) module ----------------------------------------------- 
 .sidebar { 
 	padding: 15px 0px 15px 20px; border-left: 1px solid $purple; 
-	h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
-	li.current-menu-item { display: none; }
+	aside { padding-bottom: 20px;
+		h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
+		li.current-menu-item { display: none; }
+		.sub-nav li { padding-bottom: 10px; }
+	}
+}
+
+// RSS module ----------------------------------------------- 
+#recent-posts-2 {
+	h4 { font-size: 1.2em; font-weight: 700; color: $purple; }
+	li { padding-bottom: 10px; 
+		.post-date { display: block; font-size: 0.9em; color: $grey; }
+		a { font-weight: 700; &:hover { color: darken($grey,20); } }
+	}
 }
 
 // footer module ----------------------------------------------- 
