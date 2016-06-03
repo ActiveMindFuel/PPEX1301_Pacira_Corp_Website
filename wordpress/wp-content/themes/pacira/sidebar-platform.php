@@ -4,16 +4,13 @@
 		<aside>
 			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php if ( has_nav_menu( 'platform' ) ) { ?>
-			   <ul class="sub-nav">
-         	   <?php 
-         	      wp_nav_menu( array(
-         	      	'theme_location' => 'platform'
-         	      ) );
-         	   ?>  
-         	</ul>
+			   	<ul class="sub-nav">
+         		   	<?php wp_nav_menu( array( 'theme_location' => 'platform' ) ); ?>  
+         		</ul>
 			<?php } ?>
-      </aside>
+      	</aside>
 		<?php dynamic_sidebar( 'sidebar1' ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'legal' ) ); ?>
 	<?php else : ?>
 		<?php
 			/*

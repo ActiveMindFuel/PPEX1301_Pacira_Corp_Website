@@ -29,11 +29,9 @@
 					</footer>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<ul class="footer-nav">
-						<li>Contact</li>
-						<li>US Legal</li>
-						<li>Site Map</li>
-					</ul>
+					<div class="footer-nav">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+					</div>
 				</div>
 			</div>
 		</div>

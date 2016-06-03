@@ -11,13 +11,15 @@ a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
 // header module & navigation -----------------------------------------------
 .tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
 .navbar a { color: $white; }
+.navbar-nav > li > a:hover { color: lighten($purple,10); }
+.navbar-nav > .active { background-color: darken($purple,5); color: $white; }
 
 header { margin-bottom: 10px; padding: 0 20px; }
 .tagline { margin-top: 55px; }
 
 .navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 52px; background-position: 0 -5px; background-color: $grey; }
 .navbar { border-radius: 0; margin-bottom: 0; }
-.navigation { margin-bottom: 0px; }
+.navigation { margin-bottom: 0px; z-index: 200; }
 
 .fixed-container { background-color: $white; padding-top: 20px; }
 .navbar-fixed-top { margin-bottom: 10px!important; }
@@ -95,6 +97,7 @@ img.slickslider-img-alt { display: none; }
 		li.current-menu-item { display: none; }
 		.sub-nav li { padding-bottom: 10px; }
 	}
+	.menu-legal-resolution-overview-container ul li a { font-size: 1.2em; font-weight: 700; color: $purple; &:hover { color: lighten($purple,30); } }
 }
 
 // RSS module ----------------------------------------------- 
@@ -111,6 +114,11 @@ img.slickslider-img-alt { display: none; }
 
 // footer module ----------------------------------------------- 
 footer,.footer-nav { font-size: 0.75em; padding: 0 20px; }
+.footer-nav { 
+	ul { list-style: none; padding: 0; margin: 0; }
+	li { display: inline-block; margin-left: 20px; a { color: $purple; &:hover { color: lighten($purple,30); } } }
+	li:nth-child(1) { margin-left: 0; }
+}
 
 footer { margin-bottom: 30px; }
 .footer-divideline { border-top: 2px solid $purple; margin-top: 20px; padding-top: 7px; width: 1200px; max-width: 100%; }
