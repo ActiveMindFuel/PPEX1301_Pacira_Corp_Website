@@ -2,7 +2,6 @@
 <div class="sidebar">
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 		<aside>
-			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php if ( has_nav_menu( 'products' ) ) { ?>
 			   <ul class="sub-nav">
          	   <?php 
