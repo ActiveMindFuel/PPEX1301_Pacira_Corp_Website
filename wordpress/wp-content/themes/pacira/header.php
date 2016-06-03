@@ -64,30 +64,30 @@
 				<div class="navigation">
 					<div class="col-xs-12">
 						<nav class="navbar navbar-gradient">
-         			   <div class="container">
-         			      <div class="navbar-header">
-         			         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-         			            <span class="sr-only">Toggle navigation</span>
-         			            <span class="icon-bar"></span>
-         			            <span class="icon-bar"></span>
-         			            <span class="icon-bar"></span>
-         			         </button>
-         			      </div>
-         			      <?php
-         			         wp_nav_menu( array(
-         			            'menu'              => 'primary',
-         			            'theme_location'    => 'primary',
-         			            'depth'             => 2,
-         			            'container'         => 'div',
-         			            'container_class'   => 'collapse navbar-collapse',
-         			            'container_id'      => 'bs-example-navbar-collapse-1',
-         			            'menu_class'        => 'nav navbar-nav navbar-left',
-         			            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-         			            'walker'            => new wp_bootstrap_navwalker())
-         			         );
-         			      ?>
-         			   </div>
-         			</nav>
+         				   	<div class="container">
+         				   		<div class="navbar-header">
+         				   			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+         				   				<span class="sr-only">Toggle navigation</span>
+         				   				<span class="icon-bar"></span>
+         				   				<span class="icon-bar"></span>
+         				   				<span class="icon-bar"></span>
+         				   			</button>
+         				   		</div>
+         				   		<?php
+         				   			wp_nav_menu( array(
+         				   				'menu'              => 'primary',
+         				   				'theme_location'    => 'primary',
+         				   				'depth'             => 2,
+         				   				'container'         => 'div',
+         				   				'container_class'   => 'collapse navbar-collapse',
+         				   				'container_id'      => 'bs-example-navbar-collapse-1',
+         				   				'menu_class'        => 'nav navbar-nav navbar-left',
+         				   				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+         				   				'walker'            => new wp_bootstrap_navwalker())
+         				   			);
+         				   		?>
+         				   	</div>
+         				</nav>
 					</div>
 				</div>
 			</div>
