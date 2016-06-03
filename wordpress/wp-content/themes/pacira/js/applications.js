@@ -1,4 +1,6 @@
 jQuery(document).ready(function() {
+	//alert('works');
+
 	jQuery('.slickslider').slick({
 		slidesToShow: 1,
   		slidesToScroll: 1,
