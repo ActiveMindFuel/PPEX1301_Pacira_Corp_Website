@@ -37,6 +37,7 @@ function bones_ahoy() {
     'about' => __( 'About Pacira Menu', 'bones' ),
     'platform' => __( 'Platform & Pipeline Menu', 'bones' ),
     'products' => __( 'Products Menu', 'bones' ),
+    'legal' => __( 'Legal Resolution Overview Menu', 'bones' ),
     'footer' => __( 'Footer Menu', 'bones' ) )
   );
 

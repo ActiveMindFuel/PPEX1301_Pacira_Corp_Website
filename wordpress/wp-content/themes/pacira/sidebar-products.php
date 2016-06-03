@@ -4,17 +4,14 @@
 		<aside>
 			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php if ( has_nav_menu( 'products' ) ) { ?>
-			   <ul class="sub-nav">
-         	   <?php 
-         	      wp_nav_menu( array(
-         	      	'theme_location' => 'products'
-         	      ) );
-         	   ?>  
-         	</ul>
+			   	<ul class="sub-nav">
+         	   		<?php wp_nav_menu( array( 'theme_location' => 'products' ) ); ?>  
+         		</ul>
 			<?php } ?>
-      </aside>
+      	</aside>
 		<?php dynamic_sidebar( 'sidebar1' ); ?>
-	<?php else : ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'legal' ) ); ?>
+		<?php else : ?>
 		<?php
 			/*
 			 * This content shows up if there are no widgets defined in the backend.

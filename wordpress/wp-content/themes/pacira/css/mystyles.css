@@ -17,7 +17,10 @@ body {
   padding: 0; }
 
 a {
-  color: black; }
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 .tagline {
   font-size: 1.2em;
@@ -31,6 +34,13 @@ a {
     top: -1em; }
 
 .navbar a {
+  color: #fff; }
+
+.navbar-nav > li > a:hover {
+  color: #6d35af; }
+
+.navbar-nav > .active {
+  background-color: #492374;
   color: #fff; }
 
 header {
@@ -52,7 +62,8 @@ header {
   margin-bottom: 0; }
 
 .navigation {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  z-index: 200; }
 
 .fixed-container {
   background-color: #fff;
@@ -211,16 +222,58 @@ img.slickslider-img-alt {
 .sidebar {
   padding: 15px 0px 15px 20px;
   border-left: 1px solid #552988; }
-  .sidebar h1 {
+  .sidebar aside {
+    padding-bottom: 20px; }
+    .sidebar aside h1 {
+      font-size: 1.2em;
+      font-weight: 700;
+      color: #552988; }
+    .sidebar aside li.current-menu-item {
+      display: none; }
+    .sidebar aside .sub-nav li {
+      padding-bottom: 10px; }
+  .sidebar .menu-legal-resolution-overview-container ul li a {
     font-size: 1.2em;
     font-weight: 700;
     color: #552988; }
-  .sidebar li.current-menu-item {
-    display: none; }
+    .sidebar .menu-legal-resolution-overview-container ul li a:hover {
+      color: #a175d5; }
+
+#recent-posts-2 h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #552988; }
+#recent-posts-2 li {
+  padding-bottom: 10px; }
+  #recent-posts-2 li .post-date {
+    display: block;
+    font-size: 0.9em;
+    color: #939598; }
+  #recent-posts-2 li a {
+    font-weight: 700; }
+    #recent-posts-2 li a:hover {
+      color: #606265; }
+
+.single-post #respond {
+  display: none; }
 
 footer, .footer-nav {
   font-size: 0.75em;
   padding: 0 20px; }
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.footer-nav li {
+  display: inline-block;
+  margin-left: 20px; }
+  .footer-nav li a {
+    color: #552988; }
+    .footer-nav li a:hover {
+      color: #a175d5; }
+.footer-nav li:nth-child(1) {
+  margin-left: 0; }
 
 footer {
   margin-bottom: 30px; }

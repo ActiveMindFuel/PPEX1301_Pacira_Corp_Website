@@ -5,16 +5,13 @@
 			<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php if ( has_nav_menu( 'about' ) ) { ?>
 			   <ul class="sub-nav">
-         	   <?php 
-         	      wp_nav_menu( array(
-         	      	'theme_location' => 'about'
-         	      ) );
-         	   ?>  
+         	   <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>  
          	</ul>
 			<?php } ?>
-      </aside>
+      	</aside>
 		<?php dynamic_sidebar( 'sidebar1' ); ?>
-	<?php else : ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'legal' ) ); ?>
+		<?php else : ?>
 		<?php
 			/*
 			 * This content shows up if there are no widgets defined in the backend.
