@@ -36,7 +36,7 @@ a {
 .navbar a {
   color: #fff; }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover, .nav .open > a {
   color: #6d35af; }
 
 .navbar-nav > .active {
