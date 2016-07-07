@@ -36,7 +36,7 @@ a {
 .navbar a {
   color: #fff; }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover, .nav .open > a {
   color: #6d35af; }
 
 .navbar-nav > .active {
@@ -224,7 +224,7 @@ img.slickslider-img-alt {
 
 .sidebar {
   padding: 15px 0px 15px 20px;
-  border-left: 1px solid #552988; }
+  border-left: 1px solid #939598; }
   .sidebar aside {
     padding-bottom: 20px; }
     .sidebar aside h1 {
