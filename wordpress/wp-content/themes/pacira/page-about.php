@@ -38,14 +38,14 @@
 
 					<!-- Headers -->
 					<?php if( get_row_layout() == 'header' ): ?>
-						<div id="paragraph">
+						<div id="header">
 							<h1>
 								<?php the_sub_field( 'headline' ); ?>
 							</h1>
 						</div>
 					<?php endif; ?>
 
-					<!-- Profiles -->
+					<!-- Paragraph -->
 					<?php if( get_row_layout() == 'paragraph' ): ?>
 						<div id="paragraph">
 							<p>
@@ -127,7 +127,7 @@
 									<div class="tabs-module-img-right">
 										<img src="<?php the_sub_field( 'tab_three_image_right' ); ?>" alt="<?php the_sub_field( 'tab_three_image_right_alt' ); ?>" >
 									</div>
-									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
+									<p><?php the_sub_field( 'tab_three_content' ); ?></p>
 								</div>
 							</div>
 						</div>
@@ -139,18 +139,20 @@
 							<div class="row">
 								<?php if( have_rows( 'profile_repeater' ) ): while ( have_rows( 'profile_repeater' ) ): the_row(); ?>
 									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-										<div class="profiles-module-box-element">
-											<div class="row">
-												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-													<img src="<?php the_sub_field( 'profile_photo' ); ?>" alt="<?php the_sub_field( 'profile_photo_alt' ); ?>">
-												</div>
-												<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-													<h2><?php the_sub_field( 'profile_name' ); ?></h2>
-													<p><?php the_sub_field( 'profile_title' ); ?></p>
+										<a href="<?php the_sub_field( 'profile_link' ); ?>">
+											<div class="profiles-module-box-element">
+												<div class="row">
+													<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+														<img src="<?php the_sub_field( 'profile_photo' ); ?>" alt="<?php the_sub_field( 'profile_photo_alt' ); ?>">
+													</div>
+													<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+														<h2><?php the_sub_field( 'profile_name' ); ?></h2>
+														<p><?php the_sub_field( 'profile_title' ); ?></p>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
+									</a>
 								<?php endwhile; endif; ?>
 							</div>
 						</div>

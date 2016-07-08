@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Optima";
   src: url("http://www.myfontfree.com/data/1/o/optima/unicode.optima.ttf"); }
-.brandfont, .tagline, .slickslider-header, .slickslider-subheader {
+.brandfont, .tagline, .navigation, .slickslider-header, .slickslider-subheader {
   font-family: "Optima"; }
 
 html, body {
@@ -44,7 +44,9 @@ a {
   color: #fff; }
 
 .dropdown-menu li.active a {
-  background-color: rgba(255, 0, 0, 0.5); }
+  background-color: #92c01f; }
+  .dropdown-menu li.active a:hover {
+    background-color: #92c01f; }
 
 header {
   margin-bottom: 10px;
@@ -66,7 +68,8 @@ header {
 
 .navigation {
   margin-bottom: 0px;
-  z-index: 200; }
+  z-index: 200;
+  text-transform: uppercase; }
 
 .fixed-container {
   background-color: #fff;
@@ -74,6 +77,19 @@ header {
 
 .navbar-fixed-top {
   margin-bottom: 10px !important; }
+
+.navbar-nav {
+  display: table;
+  width: 100%;
+  margin: 0; }
+
+.navbar-nav > li {
+  float: none;
+  display: table-cell;
+  text-align: center; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
 
 .masthead img {
   width: 100%;
@@ -122,24 +138,29 @@ img.slickslider-img-alt {
 .maincontent {
   padding: 0 20px; }
   .maincontent h1 {
-    font-size: 1.125em;
+    font-size: 1.175em;
     font-weight: 700; }
   .maincontent p {
     font-size: 1em;
     font-weight: 400; }
+  .maincontent img {
+    max-width: 600px;
+    height: auto; }
 
-#paragraph h1 {
-  font-size: 1.2em;
-  font-weight: 700; }
-#paragraph h2 {
-  font-size: 1.1em;
-  font-weight: 600; }
-#paragraph blockquote {
-  font-style: italic; }
-#paragraph .customheader {
-  color: #939598; }
-#paragraph .blockquote {
-  color: #552988 !important; }
+#paragraph {
+  padding-bottom: 30px; }
+  #paragraph h1 {
+    font-size: 1.2em;
+    font-weight: 700; }
+  #paragraph h2 {
+    font-size: 1.1em;
+    font-weight: 600; }
+  #paragraph blockquote {
+    font-style: italic; }
+  #paragraph .customheader {
+    color: #939598; }
+  #paragraph .blockquote {
+    color: #552988 !important; }
 
 #tabs-module .tab-pane {
   height: auto; }
@@ -206,14 +227,17 @@ img.slickslider-img-alt {
 
 #profiles .profiles-module-box-element {
   background-color: #f1f1f1;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 10px;
   -webkit-box-shadow: inset -2px -2px 2px 0px #e0e0e0;
   -moz-box-shadow: inset -2px -2px 2px 0px #e0e0e0;
   box-shadow: inset -2px -2px 2px 0px #e0e0e0; }
 #profiles img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 5px;
+  height: 116px;
+  width: 87px; }
 #profiles h2 {
   font-size: 1em;
   font-weight: 700; }
@@ -221,6 +245,20 @@ img.slickslider-img-alt {
   padding-right: 5px; }
 #profiles .col-lg-6:nth-child(even) {
   padding-left: 5px; }
+
+.bios_profile_header {
+  border-bottom: 1px solid #939598;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px; }
+  .bios_profile_header img {
+    width: 100%;
+    height: auto;
+    height: 116px;
+    width: 87px; }
+  .bios_profile_header h2 {
+    font-size: 1em;
+    font-weight: 700; }
 
 .sidebar {
   padding: 15px 0px 15px 20px;

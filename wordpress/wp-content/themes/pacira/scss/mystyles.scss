@@ -13,17 +13,32 @@ a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
 .navbar a { color: $white; }
 .navbar-nav > li > a:hover,.nav .open>a { color: lighten($purple,10); }
 .navbar-nav > .active { background-color: darken($purple,5); color: $white; }
-.dropdown-menu li.active a { background-color: rgba(red,0.5); }
+.dropdown-menu li.active a { background-color: $lime; &:hover { background-color: $lime; } }
 
 header { margin-bottom: 10px; padding: 0 20px; }
 .tagline { margin-top: 55px; }
 
 .navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 52px; background-position: 0 -5px; background-color: $grey; }
 .navbar { border-radius: 0; margin-bottom: 0; }
-.navigation { margin-bottom: 0px; z-index: 200; }
+.navigation { margin-bottom: 0px; z-index: 200; @extend .brandfont; text-transform: uppercase; }
 
 .fixed-container { background-color: $white; padding-top: 20px; }
 .navbar-fixed-top { margin-bottom: 10px!important; }
+
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 // Masthead module -----------------------------------------------
 .masthead { img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; margin-top: 190px; margin-bottom: 20px; } }
@@ -42,10 +57,10 @@ img.slickslider-img-alt { display: none; }
 .slickslider { margin-top: 190px; margin-bottom: 20px; }
 
 // content module ----------------------------------------------- 
-.maincontent { padding: 0 20px;	h1 { font-size: 1.125em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } }
+.maincontent { padding: 0 20px;	h1 { font-size: 1.175em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } img { max-width: 600px; height: auto; } }
 
 // paragraph module -----------------------------------------------
-#paragraph {
+#paragraph { padding-bottom: 30px;
 	h1 { font-size: 1.2em; font-weight: 700; }
 	h2 { font-size: 1.1em; font-weight: 600; }
 	blockquote { font-style: italic; }
@@ -83,11 +98,15 @@ img.slickslider-img-alt { display: none; }
 
 // profiles module -----------------------------------------------
 #profiles { 
-	.profiles-module-box-element { background-color: $sidebar; padding: 15px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
-	img { width: 100%;  height: auto; }
+	.profiles-module-box-element { background-color: $sidebar; padding: 10px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 2px 0px rgba(224,224,224,1) ); }
+	img { width: 100%;  height: auto; margin-bottom: 5px; height: 116px; width: 87px; }
 	h2 { font-size: 1em; font-weight: 700; }
 	.col-lg-6:nth-child(odd) { padding-right: 5px; }
 	.col-lg-6:nth-child(even) { padding-left: 5px; }
+}
+.bios_profile_header { border-bottom: 1px solid $grey; margin-bottom: 10px; padding-bottom: 20px; margin-top: 10px;
+	img { width: 100%;  height: auto; height: 116px; width: 87px; }
+	h2 { font-size: 1em; font-weight: 700; }
 }
 
 // sidebar (side menu) module ----------------------------------------------- 

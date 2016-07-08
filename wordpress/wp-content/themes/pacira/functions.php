@@ -202,6 +202,10 @@ add_filter( 'mce_buttons_2', 'fb_mce_editor_buttons' );
               'classes' => 'blockquote',
           ),
           array(
+              'title' => 'Superscript',
+              'inline' => 'sup'
+          ),
+          array(
               'title' => 'AlertBox',
               'block' => 'div',
               'classes' => 'alert_box',

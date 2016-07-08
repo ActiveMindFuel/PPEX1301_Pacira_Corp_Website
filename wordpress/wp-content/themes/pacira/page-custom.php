@@ -49,14 +49,14 @@
 
 					<!-- Headers -->
 					<?php if( get_row_layout() == 'header' ): ?>
-						<div id="paragraph">
+						<div id="header">
 							<h1>
 								<?php the_sub_field( 'headline' ); ?>
 							</h1>
 						</div>
 					<?php endif; ?>
 
-					<!-- Profiles -->
+					<!-- Paragraph -->
 					<?php if( get_row_layout() == 'paragraph' ): ?>
 						<div id="paragraph">
 							<p>
