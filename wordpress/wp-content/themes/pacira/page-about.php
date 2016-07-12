@@ -66,23 +66,106 @@
 							<div class="tab-content tabs-module-two-flex-container">
 								<!-- tab one content -->
 								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-two-content active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
-									<div class="tabs-module-img-left">
-										<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
-									</div>
-									<div class="tabs-module-img-right">
-										<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
-									</div>
+									<?php 
+										$leftimg1 = get_sub_field( 'tab_one_image_left' );
+										if( $leftimg1 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php 
+										$rightimg1 = get_sub_field( 'tab_one_image_right' );
+										if( $rightimg1 != '' ) {
+									?>
+										<div class="tabs-module-img-right">
+											<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
+										</div>
+									<?php } ?>
 									<p><?php the_sub_field( 'tab_one_content' ); ?></p>
 								</div>
 								<!-- tab two content -->
 								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-two-content" id="<?php the_sub_field( 'tab_two_id' ); ?>">
-									<div class="tabs-module-img-left">
-										<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
-									</div>
+									<?php
+										$leftimg2 = get_sub_field( 'tab_two_image_left' );
+										if( $leftimg2 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php
+										$rightimg2 = get_sub_field( 'tab_two_image_right' );
+										if( $rightimg2 != '' ) {
+									?>
 									<div class="tabs-module-img-right">
 										<img src="<?php the_sub_field( 'tab_two_image_right' ); ?>" alt="<?php the_sub_field( 'tab_two_image_right_alt' ); ?>" >
 									</div>
+									<?php } ?>
 									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#panel<?php the_sub_field( 'tab_one_id' ); ?>" aria-expanded="true" aria-controls="panel<?php the_sub_field( 'tab_one_id' ); ?>">
+									<div class="panel-heading" role="tab" id="heading<?php the_sub_field( 'tab_one_id' ); ?>">
+										<h4 class="panel-title">
+											<?php the_sub_field( 'tab_one_title' ); ?>
+										</h4>
+									</div>
+								</a>
+								<div id="panel<?php the_sub_field( 'tab_one_id' ); ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php the_sub_field( 'tab_one_id' ); ?>">
+									<div class="panel-body">
+										<?php 
+										$leftimg1 = get_sub_field( 'tab_one_image_left' );
+										if( $leftimg1 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php 
+										$rightimg1 = get_sub_field( 'tab_one_image_right' );
+										if( $rightimg1 != '' ) {
+									?>
+										<div class="tabs-module-img-right">
+											<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<p><?php the_sub_field( 'tab_one_content' ); ?></p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#panel<?php the_sub_field( 'tab_two_id' ); ?>" aria-expanded="false" aria-controls="panel<?php the_sub_field( 'tab_two_id' ); ?>">
+									<div class="panel-heading" role="tab" id="heading<?php the_sub_field( 'tab_two_id' ); ?>">
+										<h4 class="panel-title">
+											<?php the_sub_field( 'tab_two_title' ); ?>
+										</h4>
+									</div>
+								</a>
+								<div id="panel<?php the_sub_field( 'tab_two_id' ); ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php the_sub_field( 'tab_two_id' ); ?>">
+									<div class="panel-body">
+										<?php
+										$leftimg2 = get_sub_field( 'tab_two_image_left' );
+										if( $leftimg2 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php
+										$rightimg2 = get_sub_field( 'tab_two_image_right' );
+										if( $rightimg2 != '' ) {
+									?>
+									<div class="tabs-module-img-right">
+										<img src="<?php the_sub_field( 'tab_two_image_right' ); ?>" alt="<?php the_sub_field( 'tab_two_image_right_alt' ); ?>" >
+									</div>
+									<?php } ?>
+									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -93,41 +176,164 @@
 						<div id="tabs-module">
 							<!-- nav three tabs -->
 							<ul class="nav nav-tabs tabs-module-three-tabs" role="tablist">
-								<li role="presentation" class="active"><a href="#<?php the_sub_field( 'tab_one_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_one_id' ); ?>" role="tab" data-toggle="tab">	<?php the_sub_field( 'tab_one_title' ); ?></a></li>
-								<li role="presentation"><a href="#<?php the_sub_field( 'tab_two_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_two_id' ); ?>" role="tab" data-toggle="tab"><?php 	the_sub_field( 'tab_two_title' ); ?></a></li>
-								<li role="presentation"><a href="#<?php the_sub_field( 'tab_three_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_three_id' ); ?>" role="tab" data-toggle="tab"><?php 	the_sub_field( 'tab_three_title' ); ?></a></li>
+								<li role="presentation" class="active"><a href="#<?php the_sub_field( 'tab_one_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_one_id' ); ?>" role="tab" data-toggle="tab"><?php the_sub_field( 'tab_one_title' ); ?></a></li>
+								<li role="presentation"><a href="#<?php the_sub_field( 'tab_two_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_two_id' ); ?>" role="tab" data-toggle="tab"><?php the_sub_field( 'tab_two_title' ); ?></a></li>
+								<li role="presentation"><a href="#<?php the_sub_field( 'tab_three_id' ); ?>" aria-controls="<?php the_sub_field( 'tab_three_id' ); ?>" role="tab" data-toggle="tab"><?php the_sub_field( 'tab_three_title' ); ?></a></li>
 							</ul>
 							<!-- tab panes -->
 							<div class="tab-content tabs-module-three-flex-container">
 								<!-- tab one content -->
 								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-three-content active" id="<?php the_sub_field( 'tab_one_id' ); ?>">
-									<div class="tabs-module-img-left">
-										<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
-									</div>
-									<div class="tabs-module-img-right">
-										<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
-									</div>
+									<?php 
+										$leftimg1 = get_sub_field( 'tab_one_image_left' );
+										if( $leftimg1 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php 
+										$rightimg1 = get_sub_field( 'tab_one_image_right' );
+										if( $rightimg1 != '' ) {
+									?>
+										<div class="tabs-module-img-right">
+											<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
+										</div>
+									<?php } ?>
 									<p><?php the_sub_field( 'tab_one_content' ); ?></p>
 								</div>
 								<!-- tab two content -->
 								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-three-content" id="<?php the_sub_field( 'tab_two_id' ); ?>">
-									<div class="tabs-module-img-left">
-										<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
-									</div>
+									<?php
+										$leftimg2 = get_sub_field( 'tab_two_image_left' );
+										if( $leftimg2 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php
+										$rightimg2 = get_sub_field( 'tab_two_image_right' );
+										if( $rightimg2 != '' ) {
+									?>
 									<div class="tabs-module-img-right">
 										<img src="<?php the_sub_field( 'tab_two_image_right' ); ?>" alt="<?php the_sub_field( 'tab_two_image_right_alt' ); ?>" >
 									</div>
+									<?php } ?>
 									<p><?php the_sub_field( 'tab_two_content' ); ?></p>
 								</div>
 								<!-- tab three content -->
 								<div role="tabpanel" class="tab-pane tabs-module-box-element tabs-module-three-content" id="<?php the_sub_field( 'tab_three_id' ); ?>">
-									<div class="tabs-module-img-left">
-										<img src="<?php the_sub_field( 'tab_three_image_left' ); ?>" alt="<?php the_sub_field( 'tab_three_image_left_alt' ); ?>" >
-									</div>
-									<div class="tabs-module-img-right">
-										<img src="<?php the_sub_field( 'tab_three_image_right' ); ?>" alt="<?php the_sub_field( 'tab_three_image_right_alt' ); ?>" >
-									</div>
+									<?php 
+										$leftimg3 = get_sub_field( 'tab_three_image_left' );
+										if( $leftimg3 != '' ) {
+									?>
+										<div class="tabs-module-img-left">
+											<img src="<?php the_sub_field( 'tab_three_image_left' ); ?>" alt="<?php the_sub_field( 'tab_three_image_left_alt' ); ?>" >
+										</div>
+									<?php } ?>
+									<?php 
+										$rightimg3 = get_sub_field( 'tab_three_image_right' );
+										if( $rightimg3 != '' ) {
+									?>
+										<div class="tabs-module-img-right">
+											<img src="<?php the_sub_field( 'tab_three_image_right' ); ?>" alt="<?php the_sub_field( 'tab_three_image_right_alt' ); ?>" >
+										</div>
+									<?php } ?>
 									<p><?php the_sub_field( 'tab_three_content' ); ?></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#panel<?php the_sub_field( 'tab_one_id' ); ?>" aria-expanded="true" aria-controls="panel<?php the_sub_field( 'tab_one_id' ); ?>">
+									<div class="panel-heading" role="tab" id="heading<?php the_sub_field( 'tab_one_id' ); ?>">
+										<h4 class="panel-title">
+											<?php the_sub_field( 'tab_one_title' ); ?>
+										</h4>
+									</div>
+								</a>
+								<div id="panel<?php the_sub_field( 'tab_one_id' ); ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php the_sub_field( 'tab_one_id' ); ?>">
+									<div class="panel-body">
+										<?php 
+											$leftimg1 = get_sub_field( 'tab_one_image_left' );
+											if( $leftimg1 != '' ) {
+										?>
+											<div class="tabs-module-img-left">
+												<img src="<?php the_sub_field( 'tab_one_image_left' ); ?>" alt="<?php the_sub_field( 'tab_one_image_left_alt' ); ?>" >
+											</div>
+										<?php } ?>
+										<?php 
+											$rightimg1 = get_sub_field( 'tab_one_image_right' );
+											if( $rightimg1 != '' ) {
+										?>
+											<div class="tabs-module-img-right">
+												<img src="<?php the_sub_field( 'tab_one_image_right' ); ?>" alt="<?php the_sub_field( 'tab_one_image_right_alt' ); ?>" >
+											</div>
+										<?php } ?>
+										<p><?php the_sub_field( 'tab_one_content' ); ?></p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#panel<?php the_sub_field( 'tab_two_id' ); ?>" aria-expanded="false" aria-controls="panel<?php the_sub_field( 'tab_two_id' ); ?>">
+									<div class="panel-heading" role="tab" id="heading<?php the_sub_field( 'tab_two_id' ); ?>">
+										<h4 class="panel-title">
+											<?php the_sub_field( 'tab_two_title' ); ?>
+										</h4>
+									</div>
+								</a>
+								<div id="panel<?php the_sub_field( 'tab_two_id' ); ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php the_sub_field( 'tab_two_id' ); ?>">
+									<div class="panel-body">
+										<?php
+											$leftimg2 = get_sub_field( 'tab_two_image_left' );
+											if( $leftimg2 != '' ) {
+										?>
+											<div class="tabs-module-img-left">
+												<img src="<?php the_sub_field( 'tab_two_image_left' ); ?>" alt="<?php the_sub_field( 'tab_two_image_left_alt' ); ?>" >
+											</div>
+										<?php } ?>
+										<?php
+											$rightimg2 = get_sub_field( 'tab_two_image_right' );
+											if( $rightimg2 != '' ) {
+										?>
+										<div class="tabs-module-img-right">
+											<img src="<?php the_sub_field( 'tab_two_image_right' ); ?>" alt="<?php the_sub_field( 'tab_two_image_right_alt' ); ?>" >
+										</div>
+										<?php } ?>
+										<p><?php the_sub_field( 'tab_two_content' ); ?></p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#panel<?php the_sub_field( 'tab_three_id' ); ?>" aria-expanded="false" aria-controls="panel<?php the_sub_field( 'tab_three_id' ); ?>">
+									<div class="panel-heading" role="tab" id="heading<?php the_sub_field( 'tab_three_id' ); ?>">
+										<h4 class="panel-title">
+											<?php the_sub_field( 'tab_three_title' ); ?>
+										</h4>
+									</div>
+								</a>
+								<div id="panel<?php the_sub_field( 'tab_three_id' ); ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php the_sub_field( 'tab_three_id' ); ?>">
+									<div class="panel-body">
+										<?php 
+											$leftimg3 = get_sub_field( 'tab_three_image_left' );
+											if( $leftimg3 != '' ) {
+										?>
+											<div class="tabs-module-img-left">
+												<img src="<?php the_sub_field( 'tab_three_image_left' ); ?>" alt="<?php the_sub_field( 'tab_three_image_left_alt' ); ?>" >
+											</div>
+										<?php } ?>
+										<?php 
+											$rightimg3 = get_sub_field( 'tab_three_image_right' );
+											if( $rightimg3 != '' ) {
+										?>
+											<div class="tabs-module-img-right">
+												<img src="<?php the_sub_field( 'tab_three_image_right' ); ?>" alt="<?php the_sub_field( 'tab_three_image_right_alt' ); ?>" >
+											</div>
+										<?php } ?>
+										<p><?php the_sub_field( 'tab_three_content' ); ?></p>
+									</div>
 								</div>
 							</div>
 						</div>

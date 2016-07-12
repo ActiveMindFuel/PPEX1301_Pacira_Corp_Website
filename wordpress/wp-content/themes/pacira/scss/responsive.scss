@@ -9,11 +9,15 @@
 	.slickslider-text.hiker { margin-top: -550px; margin-left: 55%; }
 	.slickslider-text.skiier { margin-left: 10%; }
 	.slickslider-text.beach { margin-left: 45%; }
+	#tabs-module { display: block; }
+	#accordion { display: none; }
 }
 
 /* MD Medium Desktop */
 @media all and (min-width: 992px) and (max-width: 1169px) {
 	.sidebar { margin-left: -15px!important; }
+	#tabs-module { display: block; }
+	#accordion { display: none; }
 }
 
 /* SM Small Tablet */
@@ -22,6 +26,11 @@
 	.tagline { margin-top: 7px; }
 	.slickslider { margin-top: 220px!important; margin-bottom: 20px; }
 	.masthead { img { margin-top: 220px; } }
+	.sidebar { border-left: none; }
+	.footer-nav { float: right; }
+	.maincontent img { width: 100%; }
+	#tabs-module { display: none; }
+	#accordion { display: block; }
 	// slick slider module -----------------------------------------------
 	/*
 	.slickslider-header { color: $purple; font-size: 3.4em; font-weight: 700; font-style: italic; line-height: 1.2em; }
@@ -31,6 +40,36 @@
 	.slickslider-image img { width: 100% auto; max-height: 100%; height: auto; margin-bottom: 10px; background-repeat: no-repeat; } 
 	.slickslider { margin-top: 220px; }
 	*/
+	//shiftnav
+	.shiftnav ul.shiftnav-menu li.menu-item>.shiftnav-target { padding: 7px 25px!important; color: $white; }
+	.shiftnav-inner { background-color: #333!important; }
+	.topnav { display: block!important; }
+	.shiftnav-menu>li>a { background-color: $darkgrey; padding: 10px 0!important; border-bottom: 1px solid #333; font-weight: 700; }
+	.sub-menu li a { background-color: #444; padding-left: 10px!important; color: #ddd!important; }
+	.shiftnav-target:hover,.shiftnav-target:active { background-color: $lime!important; color: $white!important; }
+	.shiftnav-menu>.current-menu-item>a { background-color: $purple!important; color: $white!important; }
+	li .current-menu-item a { background-color: $purple!important; color: $white!important; }
+}
+
+@media all and (max-width: 869px) {
+	.slickslider { margin-top: 100px!important; margin-bottom: 20px; }
+	.masthead { img { margin-top: 100px; } }
+	.tagline { display: none; }
+	.logo { margin-top: 40px; }
+	.logo img { height: 80px; width: auto; }
+	.fixed-container { border-bottom: 1px solid #eee; text-align: center; }
+	.sidebar { border-left: none; }
+	#tabs-module { display: none; }
+	#accordion { display: block; }
+	//shiftnav
+	.shiftnav ul.shiftnav-menu li.menu-item>.shiftnav-target { padding: 7px 25px!important; color: $white; }
+	.shiftnav-inner { background-color: #333!important; }
+	.topnav { display: block!important; }
+	.shiftnav-menu>li>a { background-color: $darkgrey; padding: 10px 0!important; border-bottom: 1px solid #333; font-weight: 700; }
+	.sub-menu li a { background-color: #444; padding-left: 10px!important; color: #ddd!important; }
+	.shiftnav-target:hover,.shiftnav-target:active { background-color: $lime!important; color: $white!important; }
+	.shiftnav-menu>.current-menu-item>a { background-color: $purple!important; color: $white!important; }
+	li .current-menu-item a { background-color: $purple!important; color: $white!important; }
 }
 
 /* XS Extra Small Mobile */
@@ -40,6 +79,12 @@
 	.logo { margin-top: 40px; }
 	.logo img { height: 80px; width: auto; }
 	.fixed-container { border-bottom: 1px solid #eee; text-align: center; }
+	.sidebar { border-left: none; }
+	.footer-nav { float: none; text-align: center; margin: 0 auto; padding-bottom: 10px; .menu-footer-menu-container { margin: 0 auto; } }
+	footer { text-align: center; }
+	.maincontent img { width: 100%; }
+	#tabs-module { display: none; }
+	#accordion { display: block; }
 	// slick slider module -----------------------------------------------
 	.slickslider-header { color: $purple; font-size: 2.2em; font-weight: 700; font-style: italic; line-height: 1.2em; }
 	.slickslider-subheader { color: $purple; font-size: 1.5em; font-weight: 700; font-style: italic; padding-left: 70px; }
@@ -52,6 +97,15 @@
 	img.slickslider-img-alt { display: block; }
 
 	.masthead { img { margin-top: 100px; } }
+	//shiftnav
+	.shiftnav ul.shiftnav-menu li.menu-item>.shiftnav-target { padding: 7px 25px!important; color: $white; }
+	.shiftnav-inner { background-color: #333!important; }
+	.topnav { display: block!important; }
+	.shiftnav-menu>li>a { background-color: $darkgrey; padding: 10px 0!important; border-bottom: 1px solid #333; font-weight: 700; }
+	.sub-menu li a { background-color: #444; padding-left: 10px!important; color: #ddd!important; }
+	.shiftnav-target:hover,.shiftnav-target:active { background-color: $lime!important; color: $white!important; }
+	.shiftnav-menu>.current-menu-item>a { background-color: $purple!important; color: $white!important; }
+	li .current-menu-item a { background-color: $purple!important; color: $white!important; }
 }
 
 /* XXS Extra Small Mobile */
@@ -59,6 +113,9 @@
 	.tagline { margin-top: 7px; }
 	.logo { margin-top: 40px; }
 	.fixed-container { border-bottom: 1px solid #eee; text-align: center; }
+	.footer-nav { float: none; text-align: center; }
+	#tabs-module { display: none; }
+	#accordion { display: block; }
 	// slick slider module -----------------------------------------------
 	.slickslider-header { color: $purple; font-size: 2em; font-weight: 700; font-style: italic; line-height: 1.4em; }
 	.slickslider-subheader { color: $purple; font-size: 1.3em; font-weight: 700; font-style: italic; padding-left: 50px; }

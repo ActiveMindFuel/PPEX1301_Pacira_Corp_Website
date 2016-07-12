@@ -206,6 +206,11 @@ add_filter( 'mce_buttons_2', 'fb_mce_editor_buttons' );
               'inline' => 'sup'
           ),
           array(
+              'title' => 'Reference',
+              'inline' => 'span',
+              'classes' => 'ref'
+          ),
+          array(
               'title' => 'AlertBox',
               'block' => 'div',
               'classes' => 'alert_box',

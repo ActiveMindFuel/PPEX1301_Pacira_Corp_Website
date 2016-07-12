@@ -7,6 +7,7 @@ html,body { margin: 0 auto; font-size: 14px; }
 body { margin-top: 0px; }
 .container { width: 100%; max-width: 1200px; padding: 0; }
 a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
+.ref { font-size: 0.75em; line-height: 1em; }
 
 // header module & navigation -----------------------------------------------
 .tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
@@ -45,6 +46,17 @@ header { margin-bottom: 10px; padding: 0 20px; }
 
 // ShiftNav module -----------------------------------------------
 .shiftnav-main-toggle-content a { display: none; }
+/*
+aside { padding: 30px 0; }
+.sub-nav { text-align: right; float: right;
+	ul { list-style-type: none!important; padding-left: -15px; a { text-decoration: none; } }
+}
+
+aside .sub-nav .current-menu-item:nth-child(1) a { color: $lime; }
+aside .sub-nav .current-menu-item:nth-child(1):before { content: " "; padding-right: 0px!important; }
+aside .sub-nav .current-menu-item a { color: $black; }
+aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAwesome; padding-right: 7px; }
+*/
 
 // slick slider module -----------------------------------------------
 .slickslider-header { color: $purple; font-size: 3.4em; @extend .brandfont; font-weight: 700; font-style: italic; line-height: 1.2em; }
@@ -95,6 +107,11 @@ img.slickslider-img-alt { display: none; }
 	.tabs-module-two-flex-container { display: flex; flex-direction: column; min-height: 100%; .tabs-module-two-content { flex: 1; } } 
 	.tabs-module-three-flex-container { display: flex; flex-direction: column; min-height: 100%; .tabs-module-three-content { flex: 1; } } 
 }
+// panels module -----------------------------------------------
+#accordion {
+	.panel-heading { background-color: $purple; /*background-image: url('../img/gradient-tile-sm.svg');*/ color: $white; }
+	.panel-body { background-color: $sidebar; }
+}
 
 // profiles module -----------------------------------------------
 #profiles { 
@@ -111,7 +128,7 @@ img.slickslider-img-alt { display: none; }
 
 // sidebar (side menu) module ----------------------------------------------- 
 .sidebar { 
-	padding: 15px 0px 15px 20px; border-left: 1px solid $grey; 
+	padding: 15px 15px 15px 20px; border-left: 1px solid $grey; 
 	aside { padding-bottom: 20px;
 		h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
 		li.current-menu-item { display: none; }

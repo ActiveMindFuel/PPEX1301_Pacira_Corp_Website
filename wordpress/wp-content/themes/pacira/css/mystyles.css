@@ -22,6 +22,10 @@ a {
   a:hover {
     text-decoration: none; }
 
+.ref {
+  font-size: 0.75em;
+  line-height: 1em; }
+
 .tagline {
   font-size: 1.2em;
   font-weight: 500;
@@ -102,6 +106,17 @@ header {
 .shiftnav-main-toggle-content a {
   display: none; }
 
+/*
+aside { padding: 30px 0; }
+.sub-nav { text-align: right; float: right;
+	ul { list-style-type: none!important; padding-left: -15px; a { text-decoration: none; } }
+}
+
+aside .sub-nav .current-menu-item:nth-child(1) a { color: $lime; }
+aside .sub-nav .current-menu-item:nth-child(1):before { content: " "; padding-right: 0px!important; }
+aside .sub-nav .current-menu-item a { color: $black; }
+aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAwesome; padding-right: 7px; }
+*/
 .slickslider-header {
   color: #552988;
   font-size: 3.4em;
@@ -225,6 +240,13 @@ img.slickslider-img-alt {
   #tabs-module .tabs-module-three-flex-container .tabs-module-three-content {
     flex: 1; }
 
+#accordion .panel-heading {
+  background-color: #552988;
+  /*background-image: url('../img/gradient-tile-sm.svg');*/
+  color: #fff; }
+#accordion .panel-body {
+  background-color: #f1f1f1; }
+
 #profiles .profiles-module-box-element {
   background-color: #f1f1f1;
   padding: 10px;
@@ -261,7 +283,7 @@ img.slickslider-img-alt {
     font-weight: 700; }
 
 .sidebar {
-  padding: 15px 0px 15px 20px;
+  padding: 15px 15px 15px 20px;
   border-left: 1px solid #939598; }
   .sidebar aside {
     padding-bottom: 20px; }
