@@ -22,6 +22,10 @@ a {
   a:hover {
     text-decoration: none; }
 
+.maincontent a {
+  color: #552988;
+  text-decoration: none !important; }
+
 .ref {
   font-size: 0.75em;
   line-height: 1em; }
@@ -94,6 +98,21 @@ header {
 
 .dropdown:hover .dropdown-menu {
   display: block; }
+
+.site-menu {
+  margin-bottom: 20px; }
+  .site-menu ul li {
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    .site-menu ul li a {
+      color: #261c02; }
+    .site-menu ul li:nth-child(1) {
+      padding-left: 0;
+      background-color: rgba(85, 41, 136, 0.5);
+      padding: 7px; }
+      .site-menu ul li:nth-child(1) a {
+        color: #fff; }
 
 .masthead img {
   width: 100%;

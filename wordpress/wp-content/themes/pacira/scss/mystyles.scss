@@ -7,6 +7,7 @@ html,body { margin: 0 auto; font-size: 14px; }
 body { margin-top: 0px; }
 .container { width: 100%; max-width: 1200px; padding: 0; }
 a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
+.maincontent a { color: $purple; text-decoration: none!important; }
 .ref { font-size: 0.75em; line-height: 1em; }
 
 // header module & navigation -----------------------------------------------
@@ -39,6 +40,11 @@ header { margin-bottom: 10px; padding: 0 20px; }
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+// Sitemap -----------------------------------------------
+.site-menu { margin-bottom: 20px;
+	ul li { padding-left: 20px; padding-top: 4px; padding-bottom: 4px; a { color: $black; } &:nth-child(1) { padding-left: 0; background-color: rgba($purple, 0.5); padding: 7px; a { color: $white; } } }
 }
 
 // Masthead module -----------------------------------------------

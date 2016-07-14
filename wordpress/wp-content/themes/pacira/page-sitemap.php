@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Philanthropy Page
+ Template Name: Sitemap Page
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -33,6 +33,46 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 			<div class="maincontent">
+				<!-- sitemap navigations -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="site-menu">
+							<ul class="sub-nav">
+         					   <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>  
+         					</ul>
+						</div>
+						<div class="site-menu">
+							<ul class="sub-nav">
+         					   <?php wp_nav_menu( array( 'theme_location' => 'platform' ) ); ?>  
+         					</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="site-menu">
+							<ul class="sub-nav">
+         					   <?php wp_nav_menu( array( 'theme_location' => 'products' ) ); ?>  
+         					</ul>
+						</div>
+						<div class="site-menu">
+							<ul class="sub-nav">
+         					   <?php wp_nav_menu( array( 'theme_location' => 'philanthropy' ) ); ?>  
+         					</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+						<div class="site-menu">
+							<ul class="sub-nav">
+         					   <?php wp_nav_menu( array( 'theme_location' => 'investors' ) ); ?>  
+         					</ul>
+						</div>
+						<div class="site-menu">
+							<ul class="sub-nav">
+         					   <?php wp_nav_menu( array( 'theme_location' => 'careers' ) ); ?>  
+         					</ul>
+						</div>
+					</div>
+				</div>
+
 				<!-- flexible content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 				<?php if( have_rows( 'flexible_content' ) ): while( have_rows( 'flexible_content' ) ): the_row(); ?>
 
@@ -338,7 +378,7 @@
 							</div>
 						</div>
 					<?php endif; ?>
-
+					
 					<!-- Profiles -->
 					<?php if( get_row_layout() == 'profile' ): ?>
 						<div id="profiles">
@@ -370,7 +410,7 @@
 
 		<!-- sidebar-module ************************************************************************************************************************** -->
 
-		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><?php get_sidebar('philanthropy'); ?></div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><?php get_sidebar(); ?></div>
 	</div>
 </div>
 </div>
