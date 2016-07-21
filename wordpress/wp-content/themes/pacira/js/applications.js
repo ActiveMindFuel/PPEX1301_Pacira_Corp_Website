@@ -10,7 +10,8 @@ jQuery(document).ready(function() {
 		slidesToShow: 1,
   		slidesToScroll: 1,
   		arrows: false,
-  		autoplay: false,
+  		autoplay: true,
+  		dots: true,
   		autoplaySpeed: 5000,
 	});
 

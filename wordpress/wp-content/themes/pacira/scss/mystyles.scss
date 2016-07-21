@@ -15,6 +15,14 @@ a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
 .navbar a { color: $white; }
 .navbar-nav > li > a:hover,.nav .open>a { color: lighten($purple,10); }
 .navbar-nav > .active { background-color: darken($purple,5); color: $white; }
+.dropdown-menu { 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cddd54+100&1+0,0.5+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(205,221,84,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(205,221,84,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(205,221,84,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80cddd54',GradientType=0 ); /* IE6-9 */
+background-color: $white;
+}
 .dropdown-menu li.active a { background-color: $lime; &:hover { background-color: $lime; } }
 
 header { margin-bottom: 10px; padding: 0 20px; }
@@ -73,6 +81,13 @@ aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAw
 img.slickslider-img { display: block; }
 img.slickslider-img-alt { display: none; }
 .slickslider { margin-top: 190px; margin-bottom: 20px; }
+/* slick slider */
+.slick-dots { left: -110px!important; margin-left: 50%; position: absolute; z-index: 100; margin-top: -30px;
+	li { display: inline-block!important; border-radius: 50%; border: 1px solid $white; height: 8px; width: 8px; margin: 0 10px;
+		button { display: none; font-size: 0px; } 
+	}
+}
+.slick-dots .slick-active { border: 1px solid $white!important; background-color: $white!important; }
 
 // content module ----------------------------------------------- 
 .maincontent { padding: 0 20px;	h1 { font-size: 1.175em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } img { max-width: 600px; height: auto; } }

@@ -106,6 +106,14 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 680;
 }
 
+/************* SVG UPLOAD *************/
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes

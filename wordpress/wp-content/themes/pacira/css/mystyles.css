@@ -51,10 +51,22 @@ a {
   background-color: #492374;
   color: #fff; }
 
+.dropdown-menu {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cddd54+100&1+0,0.5+100 */
+  background: -moz-linear-gradient(top, white 0%, rgba(205, 221, 84, 0.5) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 0%, rgba(205, 221, 84, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 0%, rgba(205, 221, 84, 0.5) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80cddd54',GradientType=0 );
+  /* IE6-9 */
+  background-color: #fff; }
+
 .dropdown-menu li.active a {
-  background-color: #92c01f; }
+  background-color: #CDDD54; }
   .dropdown-menu li.active a:hover {
-    background-color: #92c01f; }
+    background-color: #CDDD54; }
 
 header {
   margin-bottom: 10px;
@@ -168,6 +180,28 @@ img.slickslider-img-alt {
 .slickslider {
   margin-top: 190px;
   margin-bottom: 20px; }
+
+/* slick slider */
+.slick-dots {
+  left: -110px !important;
+  margin-left: 50%;
+  position: absolute;
+  z-index: 100;
+  margin-top: -30px; }
+  .slick-dots li {
+    display: inline-block !important;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 8px;
+    width: 8px;
+    margin: 0 10px; }
+    .slick-dots li button {
+      display: none;
+      font-size: 0px; }
+
+.slick-dots .slick-active {
+  border: 1px solid #fff !important;
+  background-color: #fff !important; }
 
 .maincontent {
   padding: 0 20px; }
