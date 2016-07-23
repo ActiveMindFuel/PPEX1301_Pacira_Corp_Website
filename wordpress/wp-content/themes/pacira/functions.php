@@ -37,6 +37,9 @@ function bones_ahoy() {
     'about' => __( 'About Pacira Menu', 'bones' ),
     'platform' => __( 'Platform & Pipeline Menu', 'bones' ),
     'products' => __( 'Products Menu', 'bones' ),
+    'philanthropy' => __( 'Philanthropy Menu', 'bones' ),
+    'investors' => __( 'Investors Menu', 'bones' ),
+    'careers' => __( 'Careers Menu', 'bones' ),
     'legal' => __( 'Legal Resolution Overview Menu', 'bones' ),
     'footer' => __( 'Footer Menu', 'bones' ) )
   );
@@ -102,6 +105,14 @@ add_action( 'after_setup_theme', 'bones_ahoy' );
 if ( ! isset( $content_width ) ) {
 	$content_width = 680;
 }
+
+/************* SVG UPLOAD *************/
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
@@ -200,6 +211,15 @@ add_filter( 'mce_buttons_2', 'fb_mce_editor_buttons' );
                   'color' => 'blue'
               ),
               'classes' => 'blockquote',
+          ),
+          array(
+              'title' => 'Superscript',
+              'inline' => 'sup'
+          ),
+          array(
+              'title' => 'Reference',
+              'inline' => 'span',
+              'classes' => 'ref'
           ),
           array(
               'title' => 'AlertBox',

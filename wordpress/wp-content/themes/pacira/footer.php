@@ -1,7 +1,12 @@
 		<div class="container">
 			<div class="row"><div class="col-xs-12"><div class="footer-divideline"></div></div></div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-sm-push-6 col-md-push-9 col-lg-push-9">
+					<div class="footer-nav">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-9 col-lg-9 col-sm-pull-6 col-md-pull-3 col-lg-pull-3">
 					<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 						<div id="inner-footer" class="wrap cf">
@@ -27,11 +32,6 @@
 						</div>
 		
 					</footer>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<div class="footer-nav">
-						<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-					</div>
 				</div>
 			</div>
 		</div>
