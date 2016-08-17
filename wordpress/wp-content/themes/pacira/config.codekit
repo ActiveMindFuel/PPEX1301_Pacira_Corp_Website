@@ -318,127 +318,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/profiles\/blank.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12462,
-		"inputAbbreviatedPath": "\/img\/profiles\/blank.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/blank.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/dave_stack.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18314,
-		"inputAbbreviatedPath": "\/img\/profiles\/dave_stack.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/dave_stack.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/david_peter.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19872,
-		"inputAbbreviatedPath": "\/img\/profiles\/david_peter.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/david_peter.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/james_jones.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19673,
-		"inputAbbreviatedPath": "\/img\/profiles\/james_jones.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/james_jones.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/kriten_williams.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18243,
-		"inputAbbreviatedPath": "\/img\/profiles\/kriten_williams.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/kriten_williams.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/raymond_kaczmarek.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20867,
-		"inputAbbreviatedPath": "\/img\/profiles\/raymond_kaczmarek.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/raymond_kaczmarek.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/richard_kahr.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20110,
-		"inputAbbreviatedPath": "\/img\/profiles\/richard_kahr.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/richard_kahr.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/scibetta.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22615,
-		"inputAbbreviatedPath": "\/img\/profiles\/scibetta.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/scibetta.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/scott_braunstein.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20366,
-		"inputAbbreviatedPath": "\/img\/profiles\/scott_braunstein.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/scott_braunstein.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/scranton.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19963,
-		"inputAbbreviatedPath": "\/img\/profiles\/scranton.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/scranton.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/profiles\/vladimir_kharitonov.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19038,
-		"inputAbbreviatedPath": "\/img\/profiles\/vladimir_kharitonov.png",
-		"outputAbbreviatedPath": "\/img\/profiles\/vladimir_kharitonov.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/index-default.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1199,6 +1078,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/post-formats\/format.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/readme.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/readme.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2119,7 +2007,7 @@
 	"iconImageName": "brackets_brown"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2273,7 +2161,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888\/",
+	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -2750,7 +2638,7 @@
 	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleResolutionType": 0,
-	"typescriptModuleType": 0,
+	"typescriptModuleType": 2,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
