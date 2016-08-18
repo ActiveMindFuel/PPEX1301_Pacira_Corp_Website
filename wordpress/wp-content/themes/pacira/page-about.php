@@ -373,4 +373,5 @@
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><?php get_sidebar('about'); ?></div>
 	</div>
 </div>
+<!-- </div> END .off-canvas-content -->
 <?php get_footer(); ?>

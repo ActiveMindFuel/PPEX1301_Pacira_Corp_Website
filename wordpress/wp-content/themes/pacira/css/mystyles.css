@@ -13,7 +13,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 0; }
 
 a {
@@ -64,9 +64,9 @@ a {
   background-color: #fff; }
 
 .dropdown-menu li.active a {
-  background-color: #CDDD54; }
+  background-color: #92c01f; }
   .dropdown-menu li.active a:hover {
-    background-color: #CDDD54; }
+    background-color: #92c01f; }
 
 header {
   margin-bottom: 10px;
@@ -344,8 +344,10 @@ img.slickslider-img-alt {
       font-size: 1.2em;
       font-weight: 700;
       color: #552988; }
-    .sidebar aside li.current-menu-item {
-      display: none; }
+    .sidebar aside li.current-menu-item a {
+      /*font-size: 1.2em;*/
+      font-weight: 700;
+      color: #552988 !important; }
     .sidebar aside .sub-nav li {
       padding-bottom: 10px; }
   .sidebar .menu-legal-resolution-overview-container ul li a {

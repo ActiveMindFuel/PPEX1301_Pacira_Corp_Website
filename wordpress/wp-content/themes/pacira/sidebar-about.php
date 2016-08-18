@@ -2,7 +2,7 @@
 <div class="sidebar">
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 		<aside>
-			<h1 class="page-title"><?php the_title(); ?></h1>
+			<!-- <h1 class="page-title"><?php// the_title(); ?></h1> -->
 			<?php if ( has_nav_menu( 'about' ) ) { ?>
 			   <ul class="sub-nav">
          	   <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>  

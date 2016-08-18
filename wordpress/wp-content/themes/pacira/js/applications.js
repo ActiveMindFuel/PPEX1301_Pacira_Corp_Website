@@ -17,13 +17,17 @@ jQuery(document).ready(function() {
 
 	// tabs activation (each tab needs to be activated individually)
 	$('#paciraTabs a').click(function (e) {
-		e.preventDefault()
-		$(this).tab('show')
+		e.preventDefault();
+		$(this).tab('show');
 	});
 
 	$('body :not(script)').contents().filter(function() {
    	return this.nodeType === 3;
 		}).replaceWith(function() {
 	   	return this.nodeValue.replace(/[™®]/g, '<sup>$&</sup>');
+	});
+
+	jQuery('.mbtn').on("click",function() {
+		jQuery('.off-canvas-sidemenu').hide();
 	});
 });

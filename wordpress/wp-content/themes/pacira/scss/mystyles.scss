@@ -5,7 +5,7 @@
 
 html,body { margin: 0 auto; font-size: 14px; }
 body { margin-top: 0px; }
-.container { width: 100%; max-width: 1200px; padding: 0; }
+.container { width: 100%; max-width: 1100px; padding: 0; }
 a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
 .maincontent a { color: $purple; text-decoration: none!important; }
 .ref { font-size: 0.75em; line-height: 1em; }
@@ -152,7 +152,7 @@ img.slickslider-img-alt { display: none; }
 	padding: 15px 15px 15px 20px; border-left: 1px solid $grey; 
 	aside { padding-bottom: 20px;
 		h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
-		li.current-menu-item { display: none; }
+		li.current-menu-item a { /*font-size: 1.2em;*/ font-weight: 700; color: $purple!important; }
 		.sub-nav li { padding-bottom: 10px; }
 	}
 	.menu-legal-resolution-overview-container ul li a { font-size: 1.2em; font-weight: 700; color: $purple; &:hover { color: lighten($purple,30); } }
