@@ -3,7 +3,7 @@
 @import 'fonts';
 @import 'bourbon/bourbon';
 
-html,body { margin: 0 auto; font-size: 14px; }
+html,body { margin: 0 auto; font-size: 14px; overflow-x: hidden; }
 body { margin-top: 0px; }
 .container { width: 100%; max-width: 1100px; padding: 0; }
 a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
@@ -56,7 +56,7 @@ header { margin-bottom: 10px; padding: 0 20px; }
 }
 
 // Masthead module -----------------------------------------------
-.masthead { img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; margin-top: 190px; margin-bottom: 20px; } }
+.masthead { img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; margin-top: 10px; margin-bottom: 20px; } }
 
 // ShiftNav module -----------------------------------------------
 .shiftnav-main-toggle-content a { display: none; }
@@ -80,7 +80,7 @@ aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAw
 .slickslider-image img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; } 
 img.slickslider-img { display: block; }
 img.slickslider-img-alt { display: none; }
-.slickslider { margin-top: 190px; margin-bottom: 20px; }
+.slickslider { margin-top: 10px; margin-bottom: 20px; }
 /* slick slider */
 .slick-dots { left: -110px!important; margin-left: 50%; position: absolute; z-index: 100; margin-top: -30px;
 	li { display: inline-block!important; border-radius: 50%; border: 1px solid $white; height: 8px; width: 8px; margin: 0 10px;
@@ -185,3 +185,13 @@ ul { list-style: none; padding: 0; margin: 0; } .footer-nav { display: flex; jus
 // custom class -----------------------------------------------
 .box-element { background-color: $sidebar; padding: 15px; margin-bottom: 10px; @include box-shadow( inset -2px -2px 0px 0px rgba(224,224,224,1) ); }
 .flex-container { display: flex; flex-direction: column; min-height: 100vh; }
+
+//.custom-top-navbar { background-color: green; padding: 12px; height: 50px; }
+.show-sidebar { margin-left: 60%; width: 100%; }
+.off-canvas-sidemenu { background-color: $sidebar; position: fixed; width: 100%; min-height: 100vh; top: 160px; padding: 20px; }
+
+.off-canvas-content { z-index: 1000!important; background-color: $white!important; border-left: 1px solid red; position: relative; top: 60px;
+	//.slickslider img { width: 100%; height: auto; position: relative; }
+}
+.navbtn { margin-top: 145px; margin-left: 100px; z-index: 20000; position: absolute; }
+.navbar-fixed-top { top: -40px; }

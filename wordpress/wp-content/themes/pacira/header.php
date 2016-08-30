@@ -34,29 +34,43 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-	
-	<div class="menubtn">
-		<div class="fixed-container navbar-fixed-top">
-			<button class="mbtn">click</button>
-		</div>
-	</div>
-	<div class="container">
-		<div class="off-canvas-sidemenu">
-			<ul>
-				<li><a href="#">About Pacira</a></li>
-				<li><a href="#">Platform &amp; Pipeline</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Philanthropy</a></li>
-				<li><a href="#">Investors &amp; Media</a></li>
-				<li><a href="#">Careers</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- <div class="off-canvas-content"> -->
 
-		<div class=""><!-- fixed-container navbar-fixed-top -->
+	<div class="menubtn">
+		<div class="">
 			<div class="container">
 				<div class="row">
+					<div class="col-xs-12">
+						<div class="off-canvas-sidemenu">
+							<ul class="sidemenu">
+								<li><a href="#">About Pacira</a></li>
+								<li><a href="#">Platform &amp; Pipeline</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Philanthropy</a></li>
+								<li><a href="#">Investors &amp; Media</a></li>
+								<li><a href="#">Careers</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="off-canvas-content">
+	
+	
+	
+
+		<div class="fixed-container navbar-fixed-top"><!-- fixed-container navbar-fixed-top -->
+			<div class="container">
+				<div class="row">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="custom-top-navbar">
+							<button class="navbtn shownav pull-right">click here</button>
+						</div>
+					</div>
+				</div>
 					<div class="col-xs-12">
 						<header>
 							<div class="row">

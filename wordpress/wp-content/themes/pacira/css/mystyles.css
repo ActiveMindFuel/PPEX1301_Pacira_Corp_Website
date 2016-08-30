@@ -6,7 +6,8 @@
 
 html, body {
   margin: 0 auto;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-x: hidden; }
 
 body {
   margin-top: 0px; }
@@ -131,7 +132,7 @@ header {
   max-height: 569px;
   height: 100%;
   background-repeat: no-repeat;
-  margin-top: 190px;
+  margin-top: 10px;
   margin-bottom: 20px; }
 
 .shiftnav-main-toggle-content a {
@@ -178,7 +179,7 @@ img.slickslider-img-alt {
   display: none; }
 
 .slickslider {
-  margin-top: 190px;
+  margin-top: 10px;
   margin-bottom: 20px; }
 
 /* slick slider */
@@ -425,3 +426,31 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
+
+.show-sidebar {
+  margin-left: 60%;
+  width: 100%; }
+
+.off-canvas-sidemenu {
+  background-color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  top: 160px;
+  padding: 20px; }
+
+.off-canvas-content {
+  z-index: 1000 !important;
+  background-color: #fff !important;
+  border-left: 1px solid red;
+  position: relative;
+  top: 60px; }
+
+.navbtn {
+  margin-top: 145px;
+  margin-left: 100px;
+  z-index: 20000;
+  position: absolute; }
+
+.navbar-fixed-top {
+  top: -40px; }
