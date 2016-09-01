@@ -31,6 +31,10 @@
   background-color: #492374;
   color: #fff; }
 
+.current-menu-ancestor, .current-menu-parent {
+  background-color: #492374;
+  color: #fff; }
+
 .dropdown-menu {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cddd54+100&1+0,0.5+100 */
   background: -moz-linear-gradient(top, white 0%, rgba(205, 221, 84, 0.5) 100%);
@@ -42,6 +46,12 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80cddd54',GradientType=0 );
   /* IE6-9 */
   background-color: #fff; }
+
+.dropdown-menu li a {
+  padding: 7px 10px 5px; }
+  .dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+    color: #552988; }
 
 .dropdown-menu li.active a {
   background-color: #92c01f; }
@@ -112,6 +122,11 @@ header {
       background-color: #92c01f; }
       .slideout-menu .navmenu-nav li a:hover a {
         color: #fff !important; }
+  .slideout-menu .navmenu-nav .current-menu-item {
+    background-color: #492374 !important;
+    color: #fff; }
+    .slideout-menu .navmenu-nav .current-menu-item a {
+      color: #fff !important; }
   .slideout-menu .navmenu-nav .sub-menu li {
     padding: 10px 0 7px;
     background-color: #444; }
@@ -121,6 +136,14 @@ header {
     .slideout-menu .navmenu-nav .sub-menu li:hover {
       background-color: #92c01f; }
       .slideout-menu .navmenu-nav .sub-menu li:hover a {
+        color: #fff !important; }
+    .slideout-menu .navmenu-nav .sub-menu li .current-menu-ancestor, .slideout-menu .navmenu-nav .sub-menu li .current-menu-parent {
+      background-color: #492374;
+      color: #fff; }
+    .slideout-menu .navmenu-nav .sub-menu li.current-menu-item {
+      background-color: #492374;
+      color: #fff; }
+      .slideout-menu .navmenu-nav .sub-menu li.current-menu-item a {
         color: #fff !important; }
 .slideout-menu .navbar-toggle {
   float: left;
@@ -163,6 +186,8 @@ header {
     color: #552988; }
     .sidebar .menu-legal-resolution-overview-container ul li a:hover {
       color: #a175d5; }
+  .sidebar .additional-pages li i {
+    margin-right: 10px; }
 
 .slickslider-header {
   color: #552988;
@@ -262,7 +287,8 @@ a {
   color: black;
   text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #B79AE0; }
 
 .maincontent a {
   color: #552988;
@@ -331,6 +357,10 @@ aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAw
     font-weight: 600; }
   #paragraph blockquote {
     font-style: italic; }
+  #paragraph a {
+    text-decoration: none; }
+    #paragraph a:hover {
+      color: #B79AE0 !important; }
   #paragraph .customheader {
     color: #939598; }
   #paragraph .blockquote {

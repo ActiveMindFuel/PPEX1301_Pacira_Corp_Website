@@ -8,6 +8,7 @@
 .navbar a { color: $white; }
 .navbar-nav > li > a:hover,.nav .open>a { color: lighten($purple,10); }
 .navbar-nav > .active { background-color: darken($purple,5); color: $white; }
+.current-menu-ancestor,.current-menu-parent { background-color: darken($purple,5); color: $white; }
 .dropdown-menu { 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cddd54+100&1+0,0.5+100 */
 background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(205,221,84,0.5) 100%); /* FF3.6-15 */
@@ -16,6 +17,7 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(205,221,84,0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80cddd54',GradientType=0 ); /* IE6-9 */
 background-color: $white;
 }
+.dropdown-menu li a { padding: 7px 10px 5px; &:hover { background-color: $lt-grey; color: $purple; } }
 .dropdown-menu li.active a { background-color: $lime; &:hover { background-color: $lime; } }
 
 header { margin-bottom: 10px; padding: 0 20px; }
@@ -43,7 +45,7 @@ header { margin-bottom: 10px; padding: 0 20px; }
     display: block;
 }
 
-// header module & navigation -----------------------------------------------
+// slideout/responsive navigation -----------------------------------------------
 #myNavmenu { background-color: #333; a { color: $white; } }
 .slideout-menu { 
 	.navmenu-default { border: none; 
@@ -52,12 +54,15 @@ header { margin-bottom: 10px; padding: 0 20px; }
 		box-shadow: -7px 0px 14px 2px rgba(0,0,0,0.75); 
 	}
 	.navmenu-nav>li>a {  border-bottom: 1px solid #333; }
-	.navmenu-nav { text-align: left; background-color: #444;
+	.navmenu-nav { text-align: left; background-color: #444; 
 		li { background-color: #555; a { &:hover {  background-color: $lime; a { color: $white!important; } } } }
+		.current-menu-item { background-color: darken($purple,5)!important; color: $white; a { color: $white!important; } }
 
 		.sub-menu li { padding: 10px 0 7px; background-color: #444; 
 			a { margin-left: 30px; color: $grey!important; } 
 			&:hover {  background-color: $lime; a { color: $white!important; } } 
+			.current-menu-ancestor,.current-menu-parent { background-color: darken($purple,5); color: $white; }
+			&.current-menu-item { background-color: darken($purple,5); color: $white; a { color: $white!important; } }
 		}
 	}
 	.navbar-toggle { float: left; margin-left: 15px; }
@@ -80,4 +85,5 @@ header { margin-bottom: 10px; padding: 0 20px; }
 		.sub-nav li { padding-bottom: 10px; }
 	}
 	.menu-legal-resolution-overview-container ul li a { font-size: 1.2em; font-weight: 700; color: $purple; &:hover { color: lighten($purple,30); } }
+	.additional-pages li i { margin-right: 10px; }
 }

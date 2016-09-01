@@ -370,7 +370,7 @@
 
 		<!-- sidebar-module ************************************************************************************************************************** -->
 
-		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><?php get_sidebar( 'Platform' ); ?></div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><?php get_sidebar( 'platform' ); ?></div>
 	</div>
 </div>
 </div>

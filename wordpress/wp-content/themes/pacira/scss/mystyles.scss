@@ -9,7 +9,7 @@
 html,body { margin: 0 auto; font-size: 14px; overflow-x: hidden; }
 body { margin-top: 0px; }
 .container { width: 100%; max-width: 1100px; padding: 0; }
-a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
+a { color: black; text-decoration: none; &:hover { text-decoration: none; color: $lt-purple; } }
 .maincontent a { color: $purple; text-decoration: none!important; }
 .ref { font-size: 0.75em; line-height: 1em; }
 
@@ -37,8 +37,6 @@ aside .sub-nav .current-menu-item a { color: $black; }
 aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAwesome; padding-right: 7px; }
 */
 
-
-
 // content module ----------------------------------------------- 
 .maincontent { padding: 0 20px;	h1 { font-size: 1.175em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } img { max-width: 600px; height: auto; } }
 
@@ -47,6 +45,7 @@ aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAw
 	h1 { font-size: 1.2em; font-weight: 700; }
 	h2 { font-size: 1.1em; font-weight: 600; }
 	blockquote { font-style: italic; }
+	a { text-decoration: none; &:hover { color: $lt-purple!important; } }
 	.customheader { color: $grey; }
 	.blockquote { color: $purple!important; }
 	.highlight {}

@@ -30,6 +30,7 @@
 				<div class="row">
 					<div class="navigation">
 						<div class="col-xs-12">
+							<!-- Sidebar menu ************************************************************************************************************************** -->
 							<div class="slideout-menu">
 								<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
 									<a class="navmenu-brand" href="#">PACIRA</a>
@@ -62,7 +63,7 @@
 										<li><a href="#">Investors &amp; Media</a>
 											<ul class="sub-menu">
 												<li><a href="#">Company Overview</a></li>
-												<li><a href="#">Stock Governance</a></li>
+												<li class="current-menu-item"><a href="#">Stock Governance</a></li><!-- active page -->
 												<li><a href="#">Stock Information</a></li>
 												<li><a href="#">Research Coverage</a></li>
 												<li><a href="#">Press Releases</a></li>
@@ -86,6 +87,7 @@
 									</button>
 								</div>
 							</div>
+							<!-- Main menu ************************************************************************************************************************** -->
 							<nav class="navbar navbar-gradient">
 								<div class="container-fluid">
 									<div class="navbar-header">
@@ -123,10 +125,10 @@
 												</ul>
 											</li>
 											<li><a href="#">Philanthropy</a></li>
-											<li class="dropdown"><a href="#" class="dropdown-toggle" aria-haspopup="true">Investors &amp; Media <span class="caret"></span></a>
+											<li class="dropdown"><a href="#" class="dropdown-toggle current-menu-parent" aria-haspopup="true">Investors &amp; Media <span class="caret"></span></a>
 												<ul role="menu" class="dropdown-menu">
 													<li><a href="#">Company Overview</a></li>
-													<li><a href="#">Stock Governance</a></li>
+													<li class="active"><a href="#">Stock Governance</a></li><!-- active page -->
 													<li><a href="#">Stock Information</a></li>
 													<li><a href="#">Research Coverage</a></li>
 													<li><a href="#">Press Releases</a></li>
@@ -499,7 +501,7 @@
 						<ul class="sub-nav">
 							<li><a href="#">Investors &amp; Media</a></li>
 							<li><a href="#">Company Overview</a></li>
-							<li class="current-menu-item"><a href="#">Stock Governance</a></li>
+							<li class="current-menu-item"><a href="#">Stock Governance</a></li><!-- active page -->
 							<li><a href="#">Stock Information</a></li>
 							<li><a href="#">Research Coverage</a></li>
 							<li><a href="#">Press Releases</a></li>
@@ -512,6 +514,13 @@
 							<li><a href="#">Information Request</a></li>
 				     	</ul>
 				    </aside>
+				    <div>
+				    	<ul class="additional-pages">
+				    		<li><a href="#"><i class="fa fa-print" aria-hidden="true"></i> Print Page</a></li>
+				    		<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail Page</a></li>
+				    		<li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i> RSS Feeds</a></li>
+				    	</ul>
+				    </div>
 					<div class="menu-legal-resolution-overview-container">
 				    	<ul>
 				    		<li><a href="#">Legal Resolution Overview</a></li>
