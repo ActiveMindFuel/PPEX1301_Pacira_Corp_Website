@@ -64,7 +64,7 @@ aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAw
 		li a { width: 100%; }
 	}
 	.nav-tabs { 
-		li a { background-color: $purple; background-image: url('../img/gradient-tile-sm.svg'); color: $white; } //unselected tab 
+		li a { background-color: $purple; background-image: url('../img/gradient-tile.svg'); background-position: 0% 35%!important; color: $white; } //unselected tab 
 		li>a { border: none; margin-bottom: 10px; border-radius: 0; }
 		li.active>a { 
 			background-color: $sidebar; background-image: none; padding-bottom: 20px; margin-bottom: 0!important; 

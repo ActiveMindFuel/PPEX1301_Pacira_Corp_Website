@@ -139,6 +139,12 @@ header {
 .sidebar {
   padding: 15px 15px 15px 20px;
   border-left: 1px solid #939598; }
+  .sidebar h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #552988; }
+  .sidebar div {
+    padding-bottom: 20px; }
   .sidebar aside {
     padding-bottom: 20px; }
     .sidebar aside h1 {
@@ -352,7 +358,8 @@ aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAw
   width: 100%; }
 #tabs-module .nav-tabs li a {
   background-color: #552988;
-  background-image: url("../img/gradient-tile-sm.svg");
+  background-image: url("../img/gradient-tile.svg");
+  background-position: 0% 35% !important;
   color: #fff; }
 #tabs-module .nav-tabs li > a {
   border: none;
