@@ -34,50 +34,18 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-
-	<div class="menubtn">
-		<div class="">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="off-canvas-sidemenu">
-							<ul class="sidemenu">
-								<li><a href="#">About Pacira</a></li>
-								<li><a href="#">Platform &amp; Pipeline</a></li>
-								<li><a href="#">Products</a></li>
-								<li><a href="#">Philanthropy</a></li>
-								<li><a href="#">Investors &amp; Media</a></li>
-								<li><a href="#">Careers</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="off-canvas-content">
 	
-	
-	
-
 		<div class="fixed-container navbar-fixed-top"><!-- fixed-container navbar-fixed-top -->
 			<div class="container">
 				<div class="row">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="custom-top-navbar">
-							<button class="navbtn shownav pull-right">click here</button>
-						</div>
-					</div>
-				</div>
+				
 					<div class="col-xs-12">
 						<header>
 							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
 									<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Pacira_logo.svg" alt="Pacira 	logo"></a></div>
 								</div>
-								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+								<div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
 									<div class="tagline">A Passion For Delivering Improved Patient Care<sup>TM</sup></div>
 								</div>
 							</div>
@@ -89,7 +57,34 @@
 					<div class="row">
 						<div class="navigation">
 							<div class="col-xs-12">
-
+								<div class="slideout-menu">
+									<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+										<a class="navmenu-brand" href="#">PACIRA</a>
+										<!--
+										<ul class="nav navmenu-nav">
+											<li class="active"><a href="#">Home</a></li>
+											<li><a href="#">Link</a></li>
+											<li><a href="#">Link</a></li>
+										</ul>
+										-->
+										<?php
+    		     					   		wp_nav_menu( array(
+    		     					   			'menu'              => 'primary',
+    		     					   			'theme_location'    => 'primary',
+    		     					   			'depth'             => 2,
+    		     					   			'container'         => 'ul',
+    		     					   			'menu_class'        => 'nav navmenu-nav')
+    		     					   		);
+    		     					   	?>
+									</nav>
+									<div class="navbar navbar-default navbar-fixed-top">
+										<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+								</div>
 
 								<nav class="navbar navbar-gradient">
 									<div class="container-fluid">

@@ -1,0 +1,16 @@
+// slick slider module -----------------------------------------------
+.slickslider-header { color: $purple; font-size: 3.4em; @extend .brandfont; font-weight: 700; font-style: italic; line-height: 1.2em; }
+.slickslider-subheader { color: $purple; font-size: 2em; @extend .brandfont; font-weight: 700; font-style: italic; padding-left: 100px; }
+
+.slickslider-text { display: none; }
+.slickslider-image img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; } 
+img.slickslider-img { display: block; }
+img.slickslider-img-alt { display: none; }
+.slickslider { margin-top: 185px; margin-bottom: 20px; }
+/* slick slider */
+.slick-dots { left: -110px!important; margin-left: 50%; position: absolute; z-index: 100; margin-top: -30px;
+	li { display: inline-block!important; border-radius: 50%; border: 1px solid $white; height: 8px; width: 8px; margin: 0 10px;
+		button { display: none; font-size: 0px; } 
+	}
+}
+.slick-dots .slick-active { border: 1px solid $white!important; background-color: $white!important; }

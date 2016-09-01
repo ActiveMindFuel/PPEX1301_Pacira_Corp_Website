@@ -1,0 +1,10 @@
+@import 'var';
+@import 'mixins';
+@import 'fonts';
+@import 'bourbon/bourbon';
+
+table { width: 100%; }
+th { background-color: $purple; padding: 10px 10px 7px; color: $white; font-weight: 400; border: 1px solid darken($purple, 7); }
+tr:nth-child(odd) { background-color: #ddd; }
+tr:nth-child(even) { background-color: #eee; }
+td { padding: 10px 10px 7px; border: 1px solid #ccc; }

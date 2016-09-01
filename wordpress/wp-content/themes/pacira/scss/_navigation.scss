@@ -1,0 +1,81 @@
+@import 'var';
+@import 'mixins';
+@import 'fonts';
+@import 'bourbon/bourbon';
+
+// header module & navigation -----------------------------------------------
+.tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
+.navbar a { color: $white; }
+.navbar-nav > li > a:hover,.nav .open>a { color: lighten($purple,10); }
+.navbar-nav > .active { background-color: darken($purple,5); color: $white; }
+.dropdown-menu { 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cddd54+100&1+0,0.5+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(205,221,84,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(205,221,84,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(205,221,84,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80cddd54',GradientType=0 ); /* IE6-9 */
+background-color: $white;
+}
+.dropdown-menu li.active a { background-color: $lime; &:hover { background-color: $lime; } }
+
+header { margin-bottom: 10px; padding: 0 20px; }
+.tagline { margin-top: 55px; }
+
+.navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 52px; background-position: 0 -5px; background-color: $grey; }
+.navbar { border-radius: 0; margin-bottom: 0; }
+.navigation { margin-bottom: 0px; z-index: 200; @extend .brandfont; text-transform: uppercase; }
+
+.fixed-container { background-color: $white; padding-top: 20px; }
+.navbar-fixed-top { margin-bottom: 10px!important; }
+
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+// header module & navigation -----------------------------------------------
+#myNavmenu { background-color: #333; a { color: $white; } }
+.slideout-menu { 
+	.navmenu-default { border: none; 
+		-webkit-box-shadow: -7px 0px 14px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: -7px 0px 14px 2px rgba(0,0,0,0.75);
+		box-shadow: -7px 0px 14px 2px rgba(0,0,0,0.75); 
+	}
+	.navmenu-nav>li>a {  border-bottom: 1px solid #333; }
+	.navmenu-nav { text-align: left; background-color: #444;
+		li { background-color: #555; a { &:hover {  background-color: $lime; a { color: $white!important; } } } }
+
+		.sub-menu li { padding: 10px 0 7px; background-color: #444; 
+			a { margin-left: 30px; color: $grey!important; } 
+			&:hover {  background-color: $lime; a { color: $white!important; } } 
+		}
+	}
+	.navbar-toggle { float: left; margin-left: 15px; }
+	.navbar { background-color: $purple; 
+		.navbar-toggle { border: none!important; 
+			&:hover,&:focus { background-color: darken($purple, 7); } 
+			.icon-bar { background-color: $white; width: 24px; height: 3px; } 
+		} 
+	}
+}
+
+// sidebar (side menu) module ----------------------------------------------- 
+.sidebar { 
+	padding: 15px 15px 15px 20px; border-left: 1px solid $grey; 
+	aside { padding-bottom: 20px;
+		h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
+		li.current-menu-item a { /*font-size: 1.2em;*/ font-weight: 700; color: $purple!important; }
+		.sub-nav li { padding-bottom: 10px; }
+	}
+	.menu-legal-resolution-overview-container ul li a { font-size: 1.2em; font-weight: 700; color: $purple; &:hover { color: lighten($purple,30); } }
+}

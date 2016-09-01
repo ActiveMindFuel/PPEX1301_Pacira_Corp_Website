@@ -2,6 +2,9 @@
 @import 'mixins';
 @import 'fonts';
 @import 'bourbon/bourbon';
+@import 'navigation';
+@import 'slickslider';
+@import 'table';
 
 html,body { margin: 0 auto; font-size: 14px; overflow-x: hidden; }
 body { margin-top: 0px; }
@@ -10,45 +13,7 @@ a { color: black; text-decoration: none; &:hover { text-decoration: none; } }
 .maincontent a { color: $purple; text-decoration: none!important; }
 .ref { font-size: 0.75em; line-height: 1em; }
 
-// header module & navigation -----------------------------------------------
-.tagline { @extend .brandfont; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; text-transform: initial; font-variant: small-caps; color: $grey; sup { font-size: 0.5em!important; top:-1em; } }
-.navbar a { color: $white; }
-.navbar-nav > li > a:hover,.nav .open>a { color: lighten($purple,10); }
-.navbar-nav > .active { background-color: darken($purple,5); color: $white; }
-.dropdown-menu { 
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cddd54+100&1+0,0.5+100 */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(205,221,84,0.5) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(205,221,84,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(205,221,84,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80cddd54',GradientType=0 ); /* IE6-9 */
-background-color: $white;
-}
-.dropdown-menu li.active a { background-color: $lime; &:hover { background-color: $lime; } }
 
-header { margin-bottom: 10px; padding: 0 20px; }
-.tagline { margin-top: 55px; }
-
-.navbar-gradient { background-image: url('../img/gradient-tile.svg'); background-repeat: repeat-x; height: 52px; background-position: 0 -5px; background-color: $grey; }
-.navbar { border-radius: 0; margin-bottom: 0; }
-.navigation { margin-bottom: 0px; z-index: 200; @extend .brandfont; text-transform: uppercase; }
-
-.fixed-container { background-color: $white; padding-top: 20px; }
-.navbar-fixed-top { margin-bottom: 10px!important; }
-
-.navbar-nav {
-    display:table;
-    width:100%;
-    margin: 0;
-}
-.navbar-nav > li {
-    float:none;
-    display:table-cell;
-    text-align:center;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 // Sitemap -----------------------------------------------
 .site-menu { margin-bottom: 20px;
@@ -72,22 +37,7 @@ aside .sub-nav .current-menu-item a { color: $black; }
 aside .sub-nav .current-menu-item:before { content: "\f054"; font-family: FontAwesome; padding-right: 7px; }
 */
 
-// slick slider module -----------------------------------------------
-.slickslider-header { color: $purple; font-size: 3.4em; @extend .brandfont; font-weight: 700; font-style: italic; line-height: 1.2em; }
-.slickslider-subheader { color: $purple; font-size: 2em; @extend .brandfont; font-weight: 700; font-style: italic; padding-left: 100px; }
 
-.slickslider-text { display: none; }
-.slickslider-image img { width: 100%; max-height: 569px; height: 100%; background-repeat: no-repeat; } 
-img.slickslider-img { display: block; }
-img.slickslider-img-alt { display: none; }
-.slickslider { margin-top: 10px; margin-bottom: 20px; }
-/* slick slider */
-.slick-dots { left: -110px!important; margin-left: 50%; position: absolute; z-index: 100; margin-top: -30px;
-	li { display: inline-block!important; border-radius: 50%; border: 1px solid $white; height: 8px; width: 8px; margin: 0 10px;
-		button { display: none; font-size: 0px; } 
-	}
-}
-.slick-dots .slick-active { border: 1px solid $white!important; background-color: $white!important; }
 
 // content module ----------------------------------------------- 
 .maincontent { padding: 0 20px;	h1 { font-size: 1.175em; font-weight: 700; } p { font-size: 1em; font-weight: 400; } img { max-width: 600px; height: auto; } }
@@ -147,17 +97,6 @@ img.slickslider-img-alt { display: none; }
 	h2 { font-size: 1em; font-weight: 700; }
 }
 
-// sidebar (side menu) module ----------------------------------------------- 
-.sidebar { 
-	padding: 15px 15px 15px 20px; border-left: 1px solid $grey; 
-	aside { padding-bottom: 20px;
-		h1 { font-size: 1.2em; font-weight: 700; color: $purple; }
-		li.current-menu-item a { /*font-size: 1.2em;*/ font-weight: 700; color: $purple!important; }
-		.sub-nav li { padding-bottom: 10px; }
-	}
-	.menu-legal-resolution-overview-container ul li a { font-size: 1.2em; font-weight: 700; color: $purple; &:hover { color: lighten($purple,30); } }
-}
-
 // RSS module ----------------------------------------------- 
 #recent-posts-2 {
 	h4 { font-size: 1.2em; font-weight: 700; color: $purple; }
@@ -187,11 +126,11 @@ ul { list-style: none; padding: 0; margin: 0; } .footer-nav { display: flex; jus
 .flex-container { display: flex; flex-direction: column; min-height: 100vh; }
 
 //.custom-top-navbar { background-color: green; padding: 12px; height: 50px; }
-.show-sidebar { margin-left: 60%; width: 100%; }
-.off-canvas-sidemenu { background-color: $sidebar; position: fixed; width: 100%; min-height: 100vh; top: 160px; padding: 20px; }
+//.show-sidebar { margin-left: 60%; width: 100%; }
+//.off-canvas-sidemenu { background-color: $sidebar; position: fixed; width: 100%; min-height: 100vh; top: 160px; padding: 20px; }
 
-.off-canvas-content { z-index: 1000!important; background-color: $white!important; border-left: 1px solid red; position: relative; top: 60px;
+//.off-canvas-content { z-index: 1000!important; background-color: $white!important; border-left: 1px solid red; position: relative; top: 60px;
 	//.slickslider img { width: 100%; height: auto; position: relative; }
-}
-.navbtn { margin-top: 145px; margin-left: 100px; z-index: 20000; position: absolute; }
-.navbar-fixed-top { top: -40px; }
+//}
+//.navbtn { margin-top: 145px; margin-left: 100px; z-index: 20000; position: absolute; }
+//.navbar-fixed-top { top: -40px; }
